@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ledgerline – Crypto news and customer room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5FA;--surface:#fff;--ink:#14213D;--muted:#5A6580;--line:#D9DEEB;--accent:#5B3DF5;--accent-ink:#fff;--up:#0E8F5C;--down:#C42B54;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1628;--surface:#17203A;--ink:#EAEEFB;--muted:#9AA6C6;--line:#2A3558;--accent:#8E78FF;--accent-ink:#0F1628;--up:#3DD598;--down:#FF7A9A}}
+:root[data-theme="dark"]{--bg:#0F1628;--surface:#17203A;--ink:#EAEEFB;--muted:#9AA6C6;--line:#2A3558;--accent:#8E78FF;--accent-ink:#0F1628;--up:#3DD598;--down:#FF7A9A}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;line-height:1.6}
+h1,h2,h3,.brand,button,.tab,.meta{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{font-weight:800;font-size:1.35rem;letter-spacing:-.02em}
+nav{display:flex;gap:18px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.ticker{display:flex;gap:10px;overflow-x:auto;padding:4px 0 14px}
+.coin{flex:0 0 auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:.9rem}
+.coin b{margin-right:8px}
+.up{color:var(--up)}.down{color:var(--down)}
+.hero{padding:34px 0 28px}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 16px;max-width:15ch}
+.hero p{max-width:56ch;font-size:1.15rem;color:var(--muted);margin:0 0 22px}
+.btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:11px 20px;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:32px;padding-bottom:50px}
+@media (max-width:860px){main{grid-template-columns:1fr}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.92rem}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.story{padding:18px 0;border-top:1px solid var(--line)}
+.story h3{margin:4px 0 6px;font-size:1.3rem;line-height:1.2;letter-spacing:-.01em}
+.story p{margin:0;color:var(--muted)}
+.meta{font-size:.82rem;color:var(--muted)}
+.room{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;align-self:start;position:sticky;top:12px}
+.room h2{margin:0 0 4px;font-size:1.4rem;letter-spacing:-.02em}
+.room>p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
+.chan{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.log{height:300px;overflow-y:auto;border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--bg);font-size:.95rem}
+.msg{margin-bottom:10px}
+.msg b{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.msg span{display:block}
+.row{display:flex;gap:8px;margin-top:10px}
+input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;min-width:0}
+#name{width:34%}#text{flex:1}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand">Ledgerline</div><nav><a href="#news">News</a><a href="#room">Customer room</a></nav></header>
+<div class="ticker" aria-label="Sample market prices">
+ <div class="coin"><b>BTC</b>sample <span class="up">+1.2%</span></div>
+ <div class="coin"><b>ETH</b>sample <span class="down">−0.8%</span></div>
+ <div class="coin"><b>SOL</b>sample <span class="up">+2.4%</span></div>
+ <div class="coin"><b>XRP</b>sample <span class="up">+0.3%</span></div>
+ <div class="coin"><b>BNB</b>sample <span class="down">−0.2%</span></div>
+</div>
+<section class="hero">
+ <h1>Crypto news, and a room to talk about it.</h1>
+ <p>Read the day's market and regulation stories, then join other customers to ask questions, get support and share ideas.</p>
+ <a class="btn" href="#room">Join the room</a> <a class="btn ghost" href="#news">Read the news</a>
+</section>
+<main>
+ <section id="news" aria-labelledby="nh">
+  <h2 id="nh" style="margin:0 0 12px;font-size:1.4rem;letter-spacing:-.02em">Latest stories</h2>
+  <div class="tabs" id="tabs"></div>
+  <div id="stories"></div>
+ </section>
+ <aside class="room" id="room" aria-labelledby="rh">
+  <h2 id="rh">Customer room</h2>
+  <p>Pick a channel and post a message.</p>
+  <div class="chan" id="chan"></div>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="row"><input id="name" placeholder="Your name" aria-label="Your name" maxlength="20"><input id="text" placeholder="Write a message" aria-label="Message" maxlength="300"><button class="btn" id="send">Send</button></div>
+  <div class="note">Demo mode: messages are saved only in this browser. A shared live room needs a backend.</div>
+ </aside>
+</main>
+<footer>Ledgerline. Stories and prices on this page are placeholders. Crypto is risky and nothing here is financial advice.</footer>
+</div>
+<script>
+var STORIES=[
+ {c:"Bitcoin",t:"Sample headline: Bitcoin story goes here",d:"Replace this with the summary of your own article. Two sentences is enough to make readers click.",m:"Today"},
+ {c:"Ethereum",t:"Sample headline: Ethereum network update",d:"Add the key facts first, then the context. Link each card to the full article page.",m:"Today"},
+ {c:"Regulation",t:"Sample headline: New rules for crypto exchanges",d:"Regulation stories answer one question for customers: what changes for me?",m:"Yesterday"},
+ {c:"DeFi",t:"Sample headline: A DeFi protocol changes its fees",d:"Explain what happened, who is affected and what customers can do next.",m:"Yesterday"},
+ {c:"Bitcoin",t:"Sample headline: Weekly market recap",d:"A short weekly summary keeps returning readers coming back.",m:"2 days ago"}
+];
+var CATS=["All","Bitcoin","Ethereum","DeFi","Regulation"],cat="All";
+var tabs=document.getElementById("tabs"),box=document.getElementById("stories");
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function drawNews(){
+ tabs.innerHTML=CATS.map(function(c){return '<button class="tab" aria-pressed="'+(c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("");
+ box.innerHTML=STORIES.filter(function(s){return cat==="All"||s.c===cat}).map(function(s){return '<article class="story"><div class="meta">'+s.c+' · '+s.m+'</div><h3>'+s.t+'</h3><p>'+s.d+'</p></article>'}).join("")||'<p class="meta">No stories in this topic yet.</p>';
+}
+tabs.addEventListener("click",function(e){var c=e.target.getAttribute("data-c");if(c){cat=c;drawNews()}});
+drawNews();
+var CH=["General","Support","Ideas"],ch="General",data={General:[{n:"Team",t:"Welcome! Introduce yourself and ask anything."}],Support:[{n:"Team",t:"Describe your problem here and we will help."}],Ideas:[]};
+try{var saved=localStorage.getItem("ll-room");if(saved)data=JSON.parse(saved)}catch(e){}
+var chan=document.getElementById("chan"),log=document.getElementById("log"),nm=document.getElementById("name"),tx=document.getElementById("text");
+try{nm.value=localStorage.getItem("ll-name")||""}catch(e){}
+function drawRoom(){
+ chan.innerHTML=CH.map(function(c){return '<button class="tab" aria-pressed="'+(c===ch)+'" data-c="'+c+'">'+c+'</button>'}).join("");
+ log.innerHTML=(data[ch]||[]).map(function(m){return '<div class="msg"><b>'+esc(m.n)+'</b><span>'+esc(m.t)+'</span></div>'}).join("")||'<p class="meta">No messages yet. Start the conversation.</p>';
+ log.scrollTop=log.scrollHeight;
+}
+chan.addEventListener("click",function(e){var c=e.target.getAttribute("data-c");if(c){ch=c;drawRoom()}});
+function send(){
+ var t=tx.value.trim();if(!t)return;
+ (data[ch]=data[ch]||[]).push({n:nm.value.trim()||"Guest",t:t});
+ tx.value="";drawRoom();
+ try{localStorage.setItem("ll-room",JSON.stringify(data));localStorage.setItem("ll-name",nm.value)}catch(e){}
+}
+document.getElementById("send").addEventListener("click",send);
+tx.addEventListener("keydown",function(e){if(e.key==="Enter")send()});
+drawRoom();
+</script>
+</body>
+</html>
