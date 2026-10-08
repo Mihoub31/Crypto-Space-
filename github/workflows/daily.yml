@@ -1,0 +1,32 @@
+name: Daily crypto gainers
+# Put this file at .github/workflows/daily.yml in your GitHub repository,
+# next to update_gainers.py. Then enable Pages: Settings > Pages > Deploy from
+# branch "main", folder "/docs".
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch: {}   # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the page
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}   # optional
+        run: python update_gainers.py
+      - name: Save changes
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || git commit -m "Daily update"
+          git push
