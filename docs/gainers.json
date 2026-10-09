@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-09T00:15:39.075693+00:00",
+  "updated": "2026-10-09T12:57:26.477672+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "OGN",
-        "price": 0.0427,
-        "change24h": 87.445,
-        "volume24h": 57351797.99814,
-        "marketCap": null
-      },
-      {
         "symbol": "RLC",
-        "price": 0.8703,
-        "change24h": 28.895,
-        "volume24h": 27808561.05181,
+        "price": 1.0714,
+        "change24h": 48.682,
+        "volume24h": 50530028.93619,
         "marketCap": null
       },
       {
-        "symbol": "AMP",
-        "price": 0.000681,
-        "change24h": 17.212,
-        "volume24h": 8735873.582404,
-        "marketCap": null
-      },
-      {
-        "symbol": "SKL",
-        "price": 0.00524,
-        "change24h": 15.929,
-        "volume24h": 12811084.00404,
+        "symbol": "KAIA",
+        "price": 0.0567,
+        "change24h": 47.656,
+        "volume24h": 22159235.10539,
         "marketCap": null
       },
       {
         "symbol": "STRK",
-        "price": 0.05575,
-        "change24h": 13.198,
-        "volume24h": 32046682.9410086,
+        "price": 0.07228,
+        "change24h": 26.896,
+        "volume24h": 59624404.2097539,
         "marketCap": null
       },
       {
-        "symbol": "CTSI",
-        "price": 0.03364,
-        "change24h": 11.501,
-        "volume24h": 12865202.1396,
+        "symbol": "AMP",
+        "price": 0.000716,
+        "change24h": 23.875,
+        "volume24h": 13349105.478959,
         "marketCap": null
       },
       {
-        "symbol": "SOXSB",
-        "price": 33.81,
-        "change24h": 10.562,
-        "volume24h": 2361733.1113,
+        "symbol": "SKL",
+        "price": 0.00549,
+        "change24h": 22.0,
+        "volume24h": 19017803.58145,
         "marketCap": null
       },
       {
-        "symbol": "SCR",
-        "price": 0.02737,
-        "change24h": 10.008,
-        "volume24h": 3456836.539035,
+        "symbol": "MAGIC",
+        "price": 0.0773,
+        "change24h": 19.659,
+        "volume24h": 7558114.54305,
+        "marketCap": null
+      },
+      {
+        "symbol": "GTC",
+        "price": 0.19122,
+        "change24h": 15.13,
+        "volume24h": 11027363.726443,
+        "marketCap": null
+      },
+      {
+        "symbol": "S",
+        "price": 0.04468,
+        "change24h": 12.743,
+        "volume24h": 4978713.19227,
         "marketCap": null
       },
       {
         "symbol": "PYTH",
-        "price": 0.08107,
-        "change24h": 9.821,
-        "volume24h": 14455043.270082,
+        "price": 0.08425,
+        "change24h": 11.708,
+        "volume24h": 16985937.124233,
         "marketCap": null
       },
       {
-        "symbol": "\u5e01\u5b89\u4eba\u751f",
-        "price": 0.5125,
-        "change24h": 6.527,
-        "volume24h": 11801621.40615,
+        "symbol": "ZK",
+        "price": 0.01313,
+        "change24h": 9.783,
+        "volume24h": 5301033.603997,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "OGN",
-        "price": 0.04291,
-        "change24h": 88.69,
-        "volume24h": 2790508.166133072,
+        "symbol": "US",
+        "price": 0.03184,
+        "change24h": 123.53,
+        "volume24h": 17033044.633072,
         "marketCap": null
       },
       {
         "symbol": "RLC",
-        "price": 0.8695,
-        "change24h": 28.83,
-        "volume24h": 3068405.88388824,
-        "marketCap": null
-      },
-      {
-        "symbol": "LONGXIA",
-        "price": 0.0508,
-        "change24h": 25.119999999999997,
-        "volume24h": 7694770.324278,
+        "price": 1.0652,
+        "change24h": 46.56,
+        "volume24h": 4765661.6209078,
         "marketCap": null
       },
       {
         "symbol": "STRK",
-        "price": 0.05568,
-        "change24h": 13.07,
-        "volume24h": 4330479.835406142,
+        "price": 0.07224,
+        "change24h": 26.91,
+        "volume24h": 5564930.964245833,
+        "marketCap": null
+      },
+      {
+        "symbol": "XDP",
+        "price": 0.02272,
+        "change24h": 19.07,
+        "volume24h": 14886771.381306,
+        "marketCap": null
+      },
+      {
+        "symbol": "CARDS",
+        "price": 0.304,
+        "change24h": 18.05,
+        "volume24h": 2275709.451242,
+        "marketCap": null
+      },
+      {
+        "symbol": "XDC",
+        "price": 0.03581,
+        "change24h": 10.66,
+        "volume24h": 2622448.62783266,
+        "marketCap": null
+      },
+      {
+        "symbol": "LONGXIA",
+        "price": 0.04304,
+        "change24h": 9.62,
+        "volume24h": 12263078.727828,
         "marketCap": null
       },
       {
         "symbol": "ATOM",
-        "price": 1.7723,
-        "change24h": 1.7500000000000002,
-        "volume24h": 3055043.465479334,
+        "price": 1.9569,
+        "change24h": 8.06,
+        "volume24h": 4423897.54195562,
         "marketCap": null
       },
       {
-        "symbol": "PIEVERSE",
-        "price": 1.3066,
-        "change24h": 1.63,
-        "volume24h": 9672872.113584,
+        "symbol": "DOT",
+        "price": 1.1758,
+        "change24h": 6.7299999999999995,
+        "volume24h": 35050153.81789527,
         "marketCap": null
       },
       {
-        "symbol": "ADI",
-        "price": 8.2021,
-        "change24h": 1.1900000000000002,
-        "volume24h": 3649833.822834,
-        "marketCap": null
-      },
-      {
-        "symbol": "FIL",
-        "price": 1.0659,
-        "change24h": 0.61,
-        "volume24h": 2383333.168746,
-        "marketCap": null
-      },
-      {
-        "symbol": "USDC",
-        "price": 1.0007,
-        "change24h": 0.03,
-        "volume24h": 28660008.145362463,
-        "marketCap": null
-      },
-      {
-        "symbol": "ONDO",
-        "price": 0.46833,
-        "change24h": -0.75,
-        "volume24h": 13674891.020286972,
+        "symbol": "GRAM",
+        "price": 1.476,
+        "change24h": 5.12,
+        "volume24h": 5940705.516717802,
         "marketCap": null
       }
     ]
