@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-10T12:14:52.048226+00:00",
+  "updated": "2026-10-11T12:30:12.066344+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "MAGIC",
-        "price": 0.1081,
-        "change24h": 41.492,
-        "volume24h": 76696648.30131,
+        "symbol": "STRK",
+        "price": 0.11471,
+        "change24h": 60.075,
+        "volume24h": 129043408.5854268,
+        "marketCap": null
+      },
+      {
+        "symbol": "MBL",
+        "price": 0.001015,
+        "change24h": 34.794,
+        "volume24h": 5984573.100531,
+        "marketCap": null
+      },
+      {
+        "symbol": "CFX",
+        "price": 0.06758,
+        "change24h": 30.944,
+        "volume24h": 47322010.43496,
         "marketCap": null
       },
       {
         "symbol": "LUMIA",
-        "price": 0.1115,
-        "change24h": 37.995,
-        "volume24h": 16286330.826337,
+        "price": 0.1524,
+        "change24h": 28.499,
+        "volume24h": 29503067.279423,
         "marketCap": null
       },
       {
-        "symbol": "BAT",
-        "price": 0.154,
-        "change24h": 37.133,
-        "volume24h": 17300791.4965,
+        "symbol": "CHIP",
+        "price": 0.06628,
+        "change24h": 26.998,
+        "volume24h": 25209492.47732,
         "marketCap": null
       },
       {
-        "symbol": "ERA",
-        "price": 0.0807,
-        "change24h": 27.892,
-        "volume24h": 15617471.64199,
+        "symbol": "SENT",
+        "price": 0.02372,
+        "change24h": 18.719,
+        "volume24h": 7376130.51166,
         "marketCap": null
       },
       {
-        "symbol": "BEL",
-        "price": 0.14,
-        "change24h": 17.057,
-        "volume24h": 2910739.29817,
+        "symbol": "TIA",
+        "price": 0.5702,
+        "change24h": 18.103,
+        "volume24h": 31737363.579969,
         "marketCap": null
       },
       {
-        "symbol": "C98",
-        "price": 0.01822,
-        "change24h": 13.591,
-        "volume24h": 4857388.126318,
+        "symbol": "S",
+        "price": 0.04906,
+        "change24h": 14.519,
+        "volume24h": 7321794.705115,
         "marketCap": null
       },
       {
-        "symbol": "PIXEL",
-        "price": 0.00651,
-        "change24h": 11.856,
-        "volume24h": 13936445.626614,
+        "symbol": "CKB",
+        "price": 0.0015,
+        "change24h": 11.69,
+        "volume24h": 3723970.398161,
         "marketCap": null
       },
       {
-        "symbol": "WLD",
-        "price": 0.5524,
-        "change24h": 11.035,
-        "volume24h": 41538453.95559,
-        "marketCap": null
-      },
-      {
-        "symbol": "OP",
-        "price": 0.1366,
-        "change24h": 10.697,
-        "volume24h": 18157130.986548,
-        "marketCap": null
-      },
-      {
-        "symbol": "WAL",
-        "price": 0.03714,
-        "change24h": 9.752,
-        "volume24h": 5303191.440299,
+        "symbol": "VELODROME",
+        "price": 0.04278,
+        "change24h": 11.61,
+        "volume24h": 3330017.434447,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "LONGXIA",
-        "price": 0.04703,
-        "change24h": 9.19,
-        "volume24h": 3195474.064072,
+        "symbol": "STRK",
+        "price": 0.11485,
+        "change24h": 59.160000000000004,
+        "volume24h": 16016034.10715047,
         "marketCap": null
       },
       {
-        "symbol": "NEAR",
-        "price": 5.2941,
-        "change24h": 9.13,
-        "volume24h": 43773051.87416937,
+        "symbol": "CHIP",
+        "price": 0.066402,
+        "change24h": 27.32,
+        "volume24h": 3111498.324682,
         "marketCap": null
       },
       {
-        "symbol": "DOT",
-        "price": 1.2505,
-        "change24h": 6.3,
-        "volume24h": 34279495.68074544,
+        "symbol": "TIA",
+        "price": 0.5702,
+        "change24h": 18.12,
+        "volume24h": 3777212.871949406,
         "marketCap": null
       },
       {
-        "symbol": "ADA",
-        "price": 0.2553,
-        "change24h": 6.15,
-        "volume24h": 4113487.340548525,
+        "symbol": "MAGIC",
+        "price": 0.1211,
+        "change24h": 11.1,
+        "volume24h": 2277908.15727654,
         "marketCap": null
       },
       {
-        "symbol": "SUI",
-        "price": 1.1181,
-        "change24h": 4.31,
-        "volume24h": 14818572.95208,
+        "symbol": "RLC",
+        "price": 1.052,
+        "change24h": 11.05,
+        "volume24h": 2038805.99887238,
+        "marketCap": null
+      },
+      {
+        "symbol": "AERO",
+        "price": 0.9785,
+        "change24h": 10.26,
+        "volume24h": 2323577.961138,
         "marketCap": null
       },
       {
         "symbol": "PNT",
-        "price": 0.03599,
-        "change24h": 3.4099999999999997,
-        "volume24h": 2549194.98423,
+        "price": 0.03918,
+        "change24h": 9.28,
+        "volume24h": 3075193.12686,
         "marketCap": null
       },
       {
-        "symbol": "FET",
-        "price": 0.2264,
-        "change24h": 3.2800000000000002,
-        "volume24h": 2015007.04079856,
+        "symbol": "XDP",
+        "price": 0.02554,
+        "change24h": 9.19,
+        "volume24h": 8803268.365404,
         "marketCap": null
       },
       {
         "symbol": "ARB",
-        "price": 0.1855,
-        "change24h": 3.17,
-        "volume24h": 4749944.54972334,
+        "price": 0.1989,
+        "change24h": 7.33,
+        "volume24h": 4515971.53902078,
         "marketCap": null
       },
       {
-        "symbol": "TAO",
-        "price": 283.38,
-        "change24h": 2.5,
-        "volume24h": 29571897.75051,
-        "marketCap": null
-      },
-      {
-        "symbol": "ADI",
-        "price": 8.4156,
-        "change24h": 2.4,
-        "volume24h": 3479427.378896,
+        "symbol": "INJ",
+        "price": 7.639,
+        "change24h": 4.21,
+        "volume24h": 5710199.486840336,
         "marketCap": null
       }
     ]
