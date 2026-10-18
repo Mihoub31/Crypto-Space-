@@ -1,61 +1,19 @@
 {
-  "updated": "2026-10-17T10:26:39.702063+00:00",
+  "updated": "2026-10-18T10:45:17.995185+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "EPIC",
-        "price": 0.2745,
-        "change24h": 23.482,
-        "volume24h": 8359037.7951,
-        "marketCap": null
-      },
-      {
-        "symbol": "GTC",
-        "price": 0.23982,
-        "change24h": 22.183,
-        "volume24h": 8137743.500178,
-        "marketCap": null
-      },
-      {
-        "symbol": "ERA",
-        "price": 0.0711,
-        "change24h": 21.124,
-        "volume24h": 5657139.81943,
-        "marketCap": null
-      },
-      {
-        "symbol": "A",
-        "price": 0.1127,
-        "change24h": 12.139,
-        "volume24h": 6094307.45761,
-        "marketCap": null
-      },
-      {
         "symbol": "AVA",
-        "price": 0.313,
-        "change24h": 11.428,
-        "volume24h": 2695183.38799,
+        "price": 0.3671,
+        "change24h": 15.731,
+        "volume24h": 15089121.6618,
         "marketCap": null
       },
       {
-        "symbol": "MINA",
-        "price": 0.0803,
-        "change24h": 9.252,
-        "volume24h": 2500610.29769,
-        "marketCap": null
-      },
-      {
-        "symbol": "KMNO",
-        "price": 0.0423,
-        "change24h": 7.47,
-        "volume24h": 3387058.30943,
-        "marketCap": null
-      },
-      {
-        "symbol": "SAND",
-        "price": 0.05848,
-        "change24h": 6.327,
-        "volume24h": 5905189.26507,
+        "symbol": "AMP",
+        "price": 0.000757,
+        "change24h": 6.32,
+        "volume24h": 2971444.83072,
         "marketCap": null
       },
       {
@@ -66,82 +24,124 @@
         "marketCap": null
       },
       {
-        "symbol": "RSR",
-        "price": 0.002017,
-        "change24h": 5.824,
-        "volume24h": 3481409.4733924,
+        "symbol": "GLMR",
+        "price": 0.010406,
+        "change24h": 6.054,
+        "volume24h": 2040656.8177578,
+        "marketCap": null
+      },
+      {
+        "symbol": "HBAR",
+        "price": 0.08849,
+        "change24h": 5.976,
+        "volume24h": 16756277.56117,
+        "marketCap": null
+      },
+      {
+        "symbol": "GTC",
+        "price": 0.25266,
+        "change24h": 4.712,
+        "volume24h": 9894909.223996,
+        "marketCap": null
+      },
+      {
+        "symbol": "DUSK",
+        "price": 0.1241,
+        "change24h": 4.286,
+        "volume24h": 2338497.3255,
+        "marketCap": null
+      },
+      {
+        "symbol": "ERA",
+        "price": 0.0737,
+        "change24h": 4.243,
+        "volume24h": 11578133.44996,
+        "marketCap": null
+      },
+      {
+        "symbol": "SAND",
+        "price": 0.06108,
+        "change24h": 3.931,
+        "volume24h": 24927589.70779,
+        "marketCap": null
+      },
+      {
+        "symbol": "ALT",
+        "price": 0.0084,
+        "change24h": 2.066,
+        "volume24h": 12164508.74309,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "AGT",
-        "price": 0.06964,
-        "change24h": 77.72,
-        "volume24h": 6669979.569076,
-        "marketCap": null
-      },
-      {
-        "symbol": "DNA",
-        "price": 0.28781,
-        "change24h": 50.849999999999994,
-        "volume24h": 6179590.310708,
+        "symbol": "Q",
+        "price": 0.093097,
+        "change24h": 31.55,
+        "volume24h": 11460069.381696,
         "marketCap": null
       },
       {
         "symbol": "ICNT",
-        "price": 0.19964,
-        "change24h": 44.83,
-        "volume24h": 5501805.560828,
+        "price": 0.21887,
+        "change24h": 16.6,
+        "volume24h": 4198176.485418,
         "marketCap": null
       },
       {
-        "symbol": "Q",
-        "price": 0.070855,
-        "change24h": 31.71,
-        "volume24h": 2071950.365848,
+        "symbol": "HBAR",
+        "price": 0.0885,
+        "change24h": 5.93,
+        "volume24h": 2384030.78393104,
         "marketCap": null
       },
       {
-        "symbol": "VAYLA",
-        "price": 0.05654,
-        "change24h": 8.94,
-        "volume24h": 3269648.225784,
+        "symbol": "XMR",
+        "price": 585.83,
+        "change24h": 5.72,
+        "volume24h": 81744015.01308,
         "marketCap": null
       },
       {
-        "symbol": "PUMP",
-        "price": 0.004628,
-        "change24h": 4.0,
-        "volume24h": 3026059.781656,
+        "symbol": "SAND",
+        "price": 0.0611,
+        "change24h": 3.94,
+        "volume24h": 2335823.282835646,
         "marketCap": null
       },
       {
-        "symbol": "KCS",
-        "price": 7.451,
-        "change24h": 1.3299999999999998,
-        "volume24h": 54355311.8729318,
+        "symbol": "CENT",
+        "price": 0.0021965,
+        "change24h": 1.76,
+        "volume24h": 4597596.0063598,
         "marketCap": null
       },
       {
-        "symbol": "WIF",
-        "price": 0.2023,
-        "change24h": 0.44,
-        "volume24h": 3157268.78859566,
+        "symbol": "BTC",
+        "price": 82181.0,
+        "change24h": 0.65,
+        "volume24h": 245795554.4363072,
         "marketCap": null
       },
       {
-        "symbol": "DOT",
-        "price": 1.1491,
-        "change24h": 0.25,
-        "volume24h": 26106015.63148966,
+        "symbol": "BNB",
+        "price": 723.514,
+        "change24h": 0.22999999999999998,
+        "volume24h": 4266898.006801,
         "marketCap": null
       },
       {
-        "symbol": "TRX",
-        "price": 0.336,
-        "change24h": 0.11,
-        "volume24h": 2566084.694988,
+        "symbol": "USDC",
+        "price": 1.0012,
+        "change24h": 0.0,
+        "volume24h": 8358444.438942,
+        "marketCap": null
+      },
+      {
+        "symbol": "ASTER",
+        "price": 0.7087,
+        "change24h": -0.08,
+        "volume24h": 28416839.214946,
         "marketCap": null
       }
     ]
