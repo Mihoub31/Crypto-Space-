@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-21T11:32:27.223486+00:00",
+  "updated": "2026-10-22T11:32:09.345469+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "IOST",
-        "price": 0.001413,
-        "change24h": 76.185,
-        "volume24h": 33317472.39582,
+        "symbol": "SOXSB",
+        "price": 49.2,
+        "change24h": 11.036,
+        "volume24h": 2297311.3981,
         "marketCap": null
       },
       {
-        "symbol": "PARTI",
-        "price": 0.0392,
-        "change24h": 34.247,
-        "volume24h": 5098832.75687,
+        "symbol": "ARKM",
+        "price": 0.1385,
+        "change24h": 7.531,
+        "volume24h": 5109658.69205,
         "marketCap": null
       },
       {
-        "symbol": "BMT",
-        "price": 0.0244,
-        "change24h": 31.395,
-        "volume24h": 13117963.421373,
+        "symbol": "MASK",
+        "price": 0.455,
+        "change24h": 7.311,
+        "volume24h": 3982999.5994,
         "marketCap": null
       },
       {
-        "symbol": "CVX",
-        "price": 2.585,
-        "change24h": 21.762,
-        "volume24h": 4839134.496978,
+        "symbol": "HFT",
+        "price": 0.00711,
+        "change24h": 6.278,
+        "volume24h": 2328073.1448576,
         "marketCap": null
       },
       {
-        "symbol": "BNCB",
-        "price": 5.62,
-        "change24h": 19.068,
-        "volume24h": 6074234.05,
-        "marketCap": null
-      },
-      {
-        "symbol": "KORUB",
-        "price": 12.32,
-        "change24h": 15.681,
-        "volume24h": 10073112.6865,
+        "symbol": "PHA",
+        "price": 0.0608,
+        "change24h": 6.108,
+        "volume24h": 11988754.6374,
         "marketCap": null
       },
       {
         "symbol": "PROM",
-        "price": 5.505,
-        "change24h": 14.568,
-        "volume24h": 3064604.43773,
+        "price": 5.826,
+        "change24h": 6.004,
+        "volume24h": 5911142.25184,
         "marketCap": null
       },
       {
-        "symbol": "SNXXB",
-        "price": 10.75,
-        "change24h": 14.362,
-        "volume24h": 5126314.1636,
+        "symbol": "MITO",
+        "price": 0.0103,
+        "change24h": 5.209,
+        "volume24h": 5888504.81728,
         "marketCap": null
       },
       {
-        "symbol": "ZEC",
-        "price": 1288.37,
-        "change24h": 12.839,
-        "volume24h": 227600127.18437,
+        "symbol": "AI",
+        "price": 0.02,
+        "change24h": 4.167,
+        "volume24h": 76281411.51139,
         "marketCap": null
       },
       {
-        "symbol": "ENA",
-        "price": 0.2101,
-        "change24h": 12.533,
-        "volume24h": 44021944.152473,
+        "symbol": "DYM",
+        "price": 0.01874,
+        "change24h": 3.251,
+        "volume24h": 5264223.231169,
+        "marketCap": null
+      },
+      {
+        "symbol": "MUBARAK",
+        "price": 0.05483,
+        "change24h": 2.486,
+        "volume24h": 2777870.59482,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "VAYLA",
-        "price": 0.09409,
-        "change24h": 130.72,
-        "volume24h": 3260529.05059,
+        "symbol": "PTB",
+        "price": 0.00083,
+        "change24h": 78.86999999999999,
+        "volume24h": 6528903.086274,
         "marketCap": null
       },
       {
-        "symbol": "DOOD",
-        "price": 0.003171,
-        "change24h": 109.58000000000001,
-        "volume24h": 2510479.353586,
+        "symbol": "IRYS",
+        "price": 0.02007,
+        "change24h": 35.79,
+        "volume24h": 3286411.712558,
         "marketCap": null
       },
       {
-        "symbol": "USELESS",
-        "price": 0.1613,
-        "change24h": 15.290000000000001,
-        "volume24h": 2169677.161452,
+        "symbol": "AGT",
+        "price": 0.059898,
+        "change24h": 28.58,
+        "volume24h": 2957218.366614,
+        "marketCap": null
+      },
+      {
+        "symbol": "LIT",
+        "price": 3.744,
+        "change24h": 10.440000000000001,
+        "volume24h": 3800496.03318,
+        "marketCap": null
+      },
+      {
+        "symbol": "XMR",
+        "price": 642.0,
+        "change24h": 6.9,
+        "volume24h": 130342373.8236144,
         "marketCap": null
       },
       {
         "symbol": "JCT",
-        "price": 0.004689,
-        "change24h": 15.229999999999999,
-        "volume24h": 4781036.110178,
+        "price": 0.004839,
+        "change24h": 3.17,
+        "volume24h": 2607471.552258,
         "marketCap": null
       },
       {
-        "symbol": "CENT",
-        "price": 0.0019623,
-        "change24h": 14.09,
-        "volume24h": 4797083.8871246,
+        "symbol": "XDC",
+        "price": 0.03459,
+        "change24h": 1.8800000000000001,
+        "volume24h": 3059797.88310296,
         "marketCap": null
       },
       {
-        "symbol": "ZEC",
-        "price": 1289.025,
-        "change24h": 12.839999999999998,
-        "volume24h": 54087058.07616905,
+        "symbol": "LONGXIA",
+        "price": 0.02146,
+        "change24h": 0.9400000000000001,
+        "volume24h": 2123407.502096,
         "marketCap": null
       },
       {
-        "symbol": "ENA",
-        "price": 0.2101,
-        "change24h": 12.53,
-        "volume24h": 9803319.061602,
+        "symbol": "SWARM",
+        "price": 0.09145,
+        "change24h": 0.47000000000000003,
+        "volume24h": 2084220.126228,
         "marketCap": null
       },
       {
-        "symbol": "NEAR",
-        "price": 5.1742,
-        "change24h": 10.38,
-        "volume24h": 67897125.88010786,
-        "marketCap": null
-      },
-      {
-        "symbol": "PONS",
-        "price": 0.2902,
-        "change24h": 9.379999999999999,
-        "volume24h": 2065214.296524,
-        "marketCap": null
-      },
-      {
-        "symbol": "PEPE",
-        "price": 4.576e-06,
-        "change24h": 9.16,
-        "volume24h": 18110264.43000789,
+        "symbol": "PUMP",
+        "price": 0.004823,
+        "change24h": 0.44999999999999996,
+        "volume24h": 5291877.304868,
         "marketCap": null
       }
     ]
