@@ -1,490 +1,169 @@
-const fallbackData = {
-  updated: "2026-10-29T12:42:27.711104+00:00",
-  sources: {
-    Binance: [
-      { symbol: "HUMA", price: 0.0299, change24h: 11.567, volume24h: 2766062.23146, marketCap: 102000000 },
-      { symbol: "HYPE", price: 89.0, change24h: 10.353, volume24h: 54268016.44291, marketCap: 2180000000 },
-      { symbol: "LITEB", price: 964.18, change24h: 9.976, volume24h: 4971905.37349, marketCap: 187000000 },
-      { symbol: "KAT", price: 0.00458, change24h: 7.26, volume24h: 5435321.0863, marketCap: 96000000 },
-      { symbol: "HFT", price: 0.00711, change24h: 6.278, volume24h: 2328073.1448576, marketCap: 55000000 },
-      { symbol: "BICO", price: 0.0164, change24h: 5.061, volume24h: 2468288.6937676, marketCap: 48000000 },
-      { symbol: "SKHYB", price: 161.25, change24h: 3.491, volume24h: 22327731.78706, marketCap: 240000000 },
-      { symbol: "SOXSB", price: 42.84, change24h: 3.353, volume24h: 6463759.4718, marketCap: 120000000 },
-      { symbol: "ZRO", price: 1.76, change24h: 3.105, volume24h: 8146421.8423, marketCap: 92000000 },
-      { symbol: "ARB", price: 0.1704, change24h: 2.961, volume24h: 13501087.52543, marketCap: 350000000 }
-    ]
-  }
-};
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+const cors = require("cors");
 
-const chartSeries = {
-  BTC: [42, 48, 44, 60, 58, 67, 74, 78, 82, 86, 90],
-  ETH: [30, 34, 32, 40, 51, 49, 58, 62, 69, 71, 74],
-  SOL: [20, 22, 28, 31, 36, 39, 44, 56, 52, 59, 63]
-};
+const app = express();
+const PORT = process.env.PORT || 3000;
+const DATA_DIR = path.join(__dirname, "data");
+const STORAGE_PATH = path.join(DATA_DIR, "chat-room.json");
+const STATIC_PATH = path.join(__dirname, "docs");
 
-const newsItems = [
-  {
-    category: "Bitcoin",
-    title: "Bitcoin moves higher as institutional buyers return to spot markets",
-    summary: "Large-cap demand is improving as liquidity advances and traders seek structured exposure to risk assets.",
-    time: "Today",
-    link: "#"
-  },
-  {
-    category: "Ethereum",
-    title: "Ethereum network activity keeps climbing as layer-2 usage expands",
-    summary: "Developers and users continue to push transaction activity higher across the broader ecosystem.",
-    time: "Today",
-    link: "#"
-  },
-  {
-    category: "Regulation",
-    title: "New compliance rules reshape how stablecoin issuers operate globally",
-    summary: "Teams are refining treasury and reporting processes to manage a stricter public policy environment.",
-    time: "Yesterday",
-    link: "#"
-  },
-  {
-    category: "DeFi",
-    title: "DeFi protocols are prioritizing liquidity incentives over aggressive fee hikes",
-    summary: "A stronger user experience is now taking precedence over short-term revenue extraction.",
-    time: "Yesterday",
-    link: "#"
-  },
-  {
-    category: "Market",
-    title: "Volume expansion signals a healthier risk appetite across major crypto pairs",
-    summary: "Trend followers are becoming more active as daily turnover and breadth improve across exchanges.",
-    time: "2 days ago",
-    link: "#"
-  },
-  {
-    category: "Security",
-    title: "Wallet security tools are becoming a default feature for mainstream users",
-    summary: "Safer transaction flows and improved user education are reducing friction for new crypto participants.",
-    time: "2 days ago",
-    link: "#"
-  }
-];
+app.use(cors());
+app.use(express.json({ limit: "1mb" }));
+app.use(express.static(STATIC_PATH));
 
-const channelNames = ["General", "Support", "Ideas"];
+function ensureData() {
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
-const appState = {
-  theme: localStorage.getItem("ledgerline-theme") || "light",
-  sortKey: "change24h",
-  sortDirection: "desc",
-  trendFilter: "all",
-  search: "",
-  marketRows: [],
-  chatData: null,
-  activeChannel: "General"
-};
-
-function formatPrice(value) {
-  if (value === null || value === undefined) return "n/a";
-  if (value >= 1000) return `$${value.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
-  if (value >= 1) return `$${value.toLocaleString(undefined, { maximumFractionDigits: 4 })}`;
-  return `$${value.toLocaleString(undefined, { maximumFractionDigits: 6 })}`;
-}
-
-function formatCompactNumber(value) {
-  if (value === null || value === undefined) return "n/a";
-  if (value >= 1_000_000_000) return `$${(value / 1_000_000_000).toFixed(1)}B`;
-  if (value >= 1_000_000) return `$${(value / 1_000_000).toFixed(1)}M`;
-  if (value >= 1_000) return `$${(value / 1_000).toFixed(1)}K`;
-  return `$${value.toFixed(0)}`;
-}
-
-function formatChange(value) {
-  const sign = value >= 0 ? "+" : "";
-  return `${sign}${value.toFixed(1)}%`;
-}
-
-function getTopEntry(rows) {
-  if (!rows || !rows.length) return null;
-  return [...rows].sort((a, b) => b.change24h - a.change24h)[0];
-}
-
-function renderThemeToggle() {
-  const button = document.getElementById("themeToggle");
-  if (!button) return;
-
-  button.textContent = appState.theme === "dark" ? "☀️" : "🌙";
-  document.body.setAttribute("data-theme", appState.theme);
-  localStorage.setItem("ledgerline-theme", appState.theme);
-}
-
-function applyTheme() {
-  renderThemeToggle();
-}
-
-function getRowsFromData(data) {
-  if (!data?.sources) return fallbackData.sources.Binance;
-
-  const mergedRows = Object.values(data.sources).flat();
-  return mergedRows.filter((entry) => entry && typeof entry.symbol === "string");
-}
-
-function getVisibleRows() {
-  const rows = [...appState.marketRows];
-
-  const filtered = rows.filter((row) => {
-    const matchText = row.symbol.toLowerCase().includes(appState.search.toLowerCase());
-    const matchTrend =
-      appState.trendFilter === "all" ||
-      (appState.trendFilter === "up" && row.change24h >= 0) ||
-      (appState.trendFilter === "down" && row.change24h < 0);
-
-    return matchText && matchTrend;
-  });
-
-  return filtered.sort((a, b) => {
-    const left = a[appState.sortKey];
-    const right = b[appState.sortKey];
-
-    if (typeof left === "string" && typeof right === "string") {
-      return appState.sortDirection === "asc" ? left.localeCompare(right) : right.localeCompare(left);
-    }
-
-    const diff = Number(left) - Number(right);
-    return appState.sortDirection === "asc" ? diff : -diff;
-  });
-}
-
-function renderMetricCards(data) {
-  const rows = getRowsFromData(data);
-  const btc = rows.find((row) => row.symbol === "BTC") || rows[0];
-  const eth = rows.find((row) => row.symbol === "ETH") || rows[1] || rows[0];
-
-  const btcPrice = document.getElementById("btcPrice");
-  const ethPrice = document.getElementById("ethPrice");
-  const marketCap = document.getElementById("marketCap");
-  const volume = document.getElementById("volume");
-
-  if (btcPrice) btcPrice.textContent = btc ? formatPrice(btc.price) : "$64,280";
-  if (ethPrice) ethPrice.textContent = eth ? formatPrice(eth.price) : "$3,420";
-  if (marketCap) marketCap.textContent = "$2.6T";
-  if (volume) volume.textContent = "$89.4B";
-}
-
-function renderGainers(data) {
-  const rows = getRowsFromData(data);
-  appState.marketRows = rows.slice(0, 12).sort((a, b) => b.change24h - a.change24h);
-
-  const tableBody = document.getElementById("gainersTableBody");
-  if (!tableBody) return;
-
-  const visibleRows = getVisibleRows();
-
-  tableBody.innerHTML = visibleRows
-    .map((entry) => {
-      const trendClass = entry.change24h >= 0 ? "row-up" : "row-down";
-      const badge = entry.symbol.slice(0, 2).toUpperCase();
-      return `
-        <tr>
-          <td>
-            <div class="coin-cell">
-              <span class="coin-badge">${badge}</span>
-              <span>${entry.symbol}</span>
-            </div>
-          </td>
-          <td>${formatPrice(entry.price)}</td>
-          <td class="${trendClass}">${formatChange(entry.change24h)}</td>
-          <td>${formatCompactNumber(entry.volume24h)}</td>
-          <td>${formatCompactNumber(entry.marketCap || entry.volume24h * 2.5)}</td>
-        </tr>
-      `;
-    })
-    .join("");
-
-  const top = getTopEntry(appState.marketRows);
-  const topGainer = document.getElementById("topGainer");
-  const topGainerMove = document.getElementById("topGainerMove");
-
-  if (top && topGainer) {
-    topGainer.textContent = top.symbol;
-    topGainerMove.textContent = formatChange(top.change24h);
-  }
-
-  const updatedEl = document.getElementById("gainerUpdated");
-  const updatedTimeEl = document.getElementById("updatedTime");
-
-  if (updatedEl) {
-    const updated = data?.updated ? new Date(data.updated) : new Date();
-    updatedEl.textContent = `Updated ${updated.toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}`;
-  }
-
-  if (updatedTimeEl) {
-    const updated = data?.updated ? new Date(data.updated) : new Date();
-    updatedTimeEl.textContent = updated.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  if (!fs.existsSync(STORAGE_PATH)) {
+    const template = {
+      General: [{ name: "Team", text: "Welcome to General. Share your thoughts on the latest market trend." }],
+      Support: [{ name: "Team", text: "Need help? Ask here and the community will respond." }],
+      Ideas: [{ name: "Team", text: "Share new coin ideas, narratives, and macro observations." }]
+    };
+    fs.writeFileSync(STORAGE_PATH, JSON.stringify(template, null, 2));
   }
 }
 
-function buildSparkline(points, color) {
-  const width = 320;
-  const height = 120;
-  const min = Math.min(...points);
-  const max = Math.max(...points);
-  const range = max - min || 1;
-
-  const coords = points
-    .map((point, index) => {
-      const x = (index / (points.length - 1)) * width;
-      const y = height - ((point - min) / range) * (height - 10) - 5;
-      return `${x},${y}`;
-    })
-    .join(" ");
-
-  return `
-    <svg class="sparkline" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" aria-label="Trend line" role="img">
-      <defs>
-        <linearGradient id="grad-${color.replace('#', '')}" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stop-color="${color}" stop-opacity="0.6" />
-          <stop offset="100%" stop-color="${color}" stop-opacity="0.04" />
-        </linearGradient>
-      </defs>
-      <polyline fill="none" stroke="${color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${coords}" />
-    </svg>
-  `;
-}
-
-function renderCharts() {
-  const chartGrid = document.getElementById("chartGrid");
-  if (!chartGrid) return;
-
-  const entries = Object.entries(chartSeries)
-    .map(([symbol, values]) => ({ symbol, values }))
-    .slice(0, 3);
-
-  chartGrid.innerHTML = entries
-    .map(({ symbol, values }) => {
-      const color = symbol === "BTC" ? "#5a52ff" : symbol === "ETH" ? "#0d9d69" : "#f59e0b";
-      return `
-        <div class="chart-card">
-          <div class="chart-header">
-            <strong>${symbol}</strong>
-            <span class="trend up">+${((values[values.length - 1] - values[0]) / values[0] * 100).toFixed(1)}%</span>
-          </div>
-          ${buildSparkline(values, color)}
-        </div>
-      `;
-    })
-    .join("");
-}
-
-function renderNews() {
-  const newsGrid = document.getElementById("newsGrid");
-  if (!newsGrid) return;
-
-  newsGrid.innerHTML = newsItems
-    .map(
-      (item) => `
-        <article class="news-card">
-          <div class="news-card-top">
-            <span class="news-category">${item.category}</span>
-            <h3>${item.title}</h3>
-            <p>${item.summary}</p>
-          </div>
-          <div class="news-card-bottom">
-            <span>${item.time}</span>
-            <a href="${item.link}" class="news-link">Read more</a>
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function loadMessages() {
-  const saved = localStorage.getItem("ledgerline-room");
-  if (saved) {
-    try {
-      return JSON.parse(saved);
-    } catch (error) {
-      console.warn("Unable to parse saved room state.", error);
-    }
-  }
-
-  return Object.fromEntries(
-    channelNames.map((channel) => [channel, [{ name: "Team", text: `Welcome to ${channel}. Share your latest crypto take.` }]])
-  );
-}
-
-async function fetchMessages() {
+function readMessages() {
+  ensureData();
   try {
-    const response = await fetch("/api/messages", { cache: "no-store" });
-    if (!response.ok) throw new Error("Backend unavailable");
-    const data = await response.json();
-    appState.chatData = data;
-    return data;
+    return JSON.parse(fs.readFileSync(STORAGE_PATH, "utf8"));
   } catch (error) {
-    appState.chatData = loadMessages();
-    return appState.chatData;
+    return {
+      General: [{ name: "Team", text: "Welcome to General. Share your thoughts on the latest market trend." }],
+      Support: [{ name: "Team", text: "Need help? Ask here and the community will respond." }],
+      Ideas: [{ name: "Team", text: "Share new coin ideas, narratives, and macro observations." }]
+    };
   }
 }
 
-async function postMessage(payload) {
-  try {
-    const response = await fetch("/api/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
-
-    if (!response.ok) {
-      throw new Error("Unable to save to backend");
-    }
-
-    const data = await response.json();
-    appState.chatData = data.messages;
-    return data.messages;
-  } catch (error) {
-    const room = loadMessages();
-    room[payload.channel] = room[payload.channel] || [];
-    room[payload.channel].push({ name: payload.name, text: payload.text });
-    appState.chatData = room;
-    localStorage.setItem("ledgerline-room", JSON.stringify(room));
-    return room;
-  }
+function writeMessages(messages) {
+  fs.writeFileSync(STORAGE_PATH, JSON.stringify(messages, null, 2));
 }
 
-function renderChannelTabs() {
-  const channelTabs = document.getElementById("channelTabs");
-  if (!channelTabs) return;
-
-  channelTabs.innerHTML = channelNames
-    .map(
-      (channel) => `
-        <button class="channel-tab ${channel === appState.activeChannel ? "active" : ""}" type="button" data-channel="${channel}">${channel}</button>
-      `
-    )
-    .join("");
-
-  channelTabs.querySelectorAll(".channel-tab").forEach((button) => {
-    button.addEventListener("click", () => {
-      appState.activeChannel = button.dataset.channel;
-      renderChannelTabs();
-      renderChat();
-    });
-  });
+async function fetchCoinGeckoMarkets() {
+  const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,ripple,cardano,chainlink,arbitrum,dogecoin,avalanche,tron&order=market_cap_desc&per_page=12&page=1&sparkline=true&price_change_percentage=24h";
+  const response = await fetch(url, { headers: { "accept": "application/json" } });
+  if (!response.ok) throw new Error("CoinGecko unavailable");
+  const data = await response.json();
+  return data.map((coin) => ({
+    symbol: coin.symbol.toUpperCase(),
+    name: coin.name,
+    price: coin.current_price,
+    change24h: coin.price_change_percentage_24h || 0,
+    volume24h: coin.total_volume || 0,
+    marketCap: coin.market_cap || 0,
+    image: coin.image,
+    id: coin.id,
+    marketCapRank: coin.market_cap_rank || null
+  }));
 }
 
-function renderChat() {
-  const chatLog = document.getElementById("chatLog");
-  if (!chatLog) return;
+async function fetchCoinGeckoDetail(symbol) {
+  const cached = [
+    { id: "bitcoin", symbol: "BTC" },
+    { id: "ethereum", symbol: "ETH" },
+    { id: "solana", symbol: "SOL" },
+    { id: "ripple", symbol: "XRP" },
+    { id: "cardano", symbol: "ADA" },
+    { id: "chainlink", symbol: "LINK" },
+    { id: "arbitrum", symbol: "ARB" },
+    { id: "dogecoin", symbol: "DOGE" },
+    { id: "avalanche-2", symbol: "AVAX" },
+    { id: "tron", symbol: "TRX" }
+  ];
 
-  const room = appState.chatData || loadMessages();
-  const messages = room[appState.activeChannel] || [];
+  const lookup = cached.find((item) => item.symbol.toLowerCase() === String(symbol).toLowerCase());
+  const id = lookup ? lookup.id : symbol;
+  const url = `https://api.coingecko.com/api/v3/coins/${id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=true`;
+  const response = await fetch(url, { headers: { "accept": "application/json" } });
+  if (!response.ok) throw new Error("Coin detail unavailable");
+  const coin = await response.json();
 
-  chatLog.innerHTML = messages.length
-    ? messages
-        .map(
-          (message) => `
-            <div class="chat-message">
-              <strong>${message.name}</strong>
-              <span>${message.text}</span>
-            </div>
-          `
-        )
-        .join("")
-    : '<div class="chat-empty">No messages yet. Start the conversation.</div>';
-
-  chatLog.scrollTop = chatLog.scrollHeight;
-}
-
-async function sendChatMessage() {
-  const messageInput = document.getElementById("messageInput");
-  const nameInput = document.getElementById("nameInput");
-  const text = messageInput?.value.trim();
-  if (!text) return;
-
-  const payload = {
-    channel: appState.activeChannel,
-    name: nameInput?.value.trim() || "Guest",
-    text
+  return {
+    id: coin.id,
+    name: coin.name,
+    symbol: coin.symbol.toUpperCase(),
+    current_price: coin.market_data?.current_price?.usd ?? null,
+    price_change_percentage_24h: coin.market_data?.price_change_percentage_24h ?? 0,
+    total_volume: coin.market_data?.total_volume?.usd ?? 0,
+    market_cap: coin.market_data?.market_cap?.usd ?? 0,
+    market_cap_rank: coin.market_cap_rank ?? null,
+    image: coin.image?.small || ""
   };
-
-  const nextRoom = await postMessage(payload);
-  appState.chatData = nextRoom;
-  renderChat();
-  if (messageInput) messageInput.value = "";
 }
 
-function bindControls() {
-  const themeToggle = document.getElementById("themeToggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      appState.theme = appState.theme === "dark" ? "light" : "dark";
-      applyTheme();
-    });
-  }
-
-  const searchInput = document.getElementById("marketSearch");
-  const trendFilter = document.getElementById("trendFilter");
-  const sortSelect = document.getElementById("sortSelect");
-
-  if (searchInput) {
-    searchInput.addEventListener("input", (event) => {
-      appState.search = event.target.value.trim();
-      renderGainers({ sources: { Binance: appState.marketRows } });
-    });
-  }
-
-  if (trendFilter) {
-    trendFilter.addEventListener("change", (event) => {
-      appState.trendFilter = event.target.value;
-      renderGainers({ sources: { Binance: appState.marketRows } });
-    });
-  }
-
-  if (sortSelect) {
-    sortSelect.addEventListener("change", (event) => {
-      appState.sortKey = event.target.value;
-      appState.sortDirection = appState.sortKey === "symbol" ? "asc" : "desc";
-      renderGainers({ sources: { Binance: appState.marketRows } });
-    });
-  }
-
-  const sendBtn = document.getElementById("sendBtn");
-  if (sendBtn) {
-    sendBtn.addEventListener("click", sendChatMessage);
-  }
-
-  const messageInput = document.getElementById("messageInput");
-  if (messageInput) {
-    messageInput.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        sendChatMessage();
-      }
-    });
-  }
-}
-
-async function init() {
-  applyTheme();
-  bindControls();
-  renderCharts();
-  renderNews();
-
+app.get("/api/market", async (req, res) => {
   try {
-    const response = await fetch("./gainers.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Fallback to sample data");
-    const data = await response.json();
-    renderMetricCards(data);
-    renderGainers(data);
+    const rows = await fetchCoinGeckoMarkets();
+    res.json({ updated: new Date().toISOString(), rows });
   } catch (error) {
-    renderMetricCards(fallbackData);
-    renderGainers(fallbackData);
+    res.status(502).json({
+      updated: new Date().toISOString(),
+      rows: [
+        { symbol: "BTC", name: "Bitcoin", price: 64280, change24h: 1.8, volume24h: 33200000000, marketCap: 1270000000000 },
+        { symbol: "ETH", name: "Ethereum", price: 3420, change24h: 2.3, volume24h: 16100000000, marketCap: 411000000000 },
+        { symbol: "SOL", name: "Solana", price: 146.5, change24h: 4.2, volume24h: 3870000000, marketCap: 67000000000 },
+        { symbol: "XRP", name: "XRP", price: 0.58, change24h: 1.5, volume24h: 2330000000, marketCap: 32900000000 }
+      ]
+    });
+  }
+});
+
+app.get("/api/coin/:symbol", async (req, res) => {
+  try {
+    const detail = await fetchCoinGeckoDetail(req.params.symbol);
+    res.json(detail);
+  } catch (error) {
+    const fallback = {
+      symbol: req.params.symbol.toUpperCase(),
+      name: req.params.symbol.toUpperCase(),
+      current_price: null,
+      price_change_percentage_24h: 0,
+      total_volume: 0,
+      market_cap: 0,
+      market_cap_rank: null,
+      image: ""
+    };
+    res.json(fallback);
+  }
+});
+
+app.get("/api/messages", (req, res) => {
+  res.json(readMessages());
+});
+
+app.post("/api/messages", (req, res) => {
+  const { channel, name, text } = req.body || {};
+  if (!channel || !text) {
+    return res.status(400).json({ error: "Channel and message are required." });
   }
 
-  appState.chatData = await fetchMessages();
-  renderChannelTabs();
-  renderChat();
-}
+  const messages = readMessages();
+  const safeChannel = channel.trim();
+  messages[safeChannel] = messages[safeChannel] || [];
+  messages[safeChannel].push({ name: (name || "Guest").trim() || "Guest", text: String(text).trim() });
+  writeMessages(messages);
+  res.status(201).json({ ok: true, messages });
+});
 
-window.addEventListener("DOMContentLoaded", init);
+app.get("/", (req, res) => {
+  res.sendFile(path.join(STATIC_PATH, "index.html"));
+});
 
+app.get("/*", (req, res) => {
+  const candidate = path.join(STATIC_PATH, req.path);
+  if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
+    return res.sendFile(candidate);
+  }
+  res.sendFile(path.join(STATIC_PATH, "index.html"));
+});
 
+app.listen(PORT, () => {
+  console.log(`Ledgerline backend running at http://localhost:${PORT}`);
+});
 
 
 
@@ -727,6 +406,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 
 
+n
 
 
 
@@ -753,6 +433,420 @@ window.addEventListener("DOMContentLoaded", init);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n
 
 
 

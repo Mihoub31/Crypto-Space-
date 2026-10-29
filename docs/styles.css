@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ledgerline is a crypto news and market dashboard with live market movers, charts, and community discussion." />
-    <title>Ledgerline | Crypto News & Market Pulse</title>
+    <meta name="description" content="Ledgerline crypto dashboard with live market data, token details, portfolio tracking, and a community room." />
+    <title>Ledgerline | Crypto Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -24,6 +24,7 @@
         <nav class="nav" aria-label="Main navigation">
           <a href="#overview">Overview</a>
           <a href="#gainers">Top movers</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#news">News</a>
           <a href="#community">Community</a>
         </nav>
@@ -38,15 +39,14 @@
         <section class="hero" id="overview">
           <div class="hero-copy">
             <span class="eyebrow">Live market intelligence</span>
-            <h1>Crypto news, market movement, and community insight.</h1>
+            <h1>Track crypto movement, ideas, and portfolio performance.</h1>
             <p>
-              Follow top gainers, understand the market pulse, and join real-time conversations about price action,
-              narratives, and crypto opportunities in one place.
+              Explore top movers, read the latest narratives, open token detail pages,
+              and monitor your portfolio in one connected crypto dashboard.
             </p>
-
             <div class="hero-actions">
               <a class="primary-btn" href="#gainers">Explore movers</a>
-              <a class="secondary-btn" href="#news">Latest stories</a>
+              <a class="secondary-btn" href="#portfolio">Portfolio</a>
             </div>
           </div>
 
@@ -116,8 +116,8 @@
 
             <div class="table-controls">
               <label class="field-group">
-                <span>Filter</span>
-                <input id="marketSearch" type="search" placeholder="Search coin" aria-label="Filter market table" />
+                <span>Search</span>
+                <input id="marketSearch" type="search" placeholder="Search symbol" aria-label="Search coin symbol" />
               </label>
 
               <label class="field-group">
@@ -130,7 +130,7 @@
               </label>
 
               <label class="field-group">
-                <span>Sort by</span>
+                <span>Sort</span>
                 <select id="sortSelect">
                   <option value="change24h">24h change</option>
                   <option value="volume24h">Volume</option>
@@ -154,6 +154,36 @@
                 <tbody id="gainersTableBody"></tbody>
               </table>
             </div>
+          </div>
+
+          <aside class="panel-section detail-panel" id="detailPanel">
+            <div class="section-heading compact">
+              <div>
+                <span class="eyebrow">Token detail</span>
+                <h2 id="detailTitle">Bitcoin</h2>
+              </div>
+            </div>
+            <div id="tokenDetail" class="token-detail"></div>
+          </aside>
+        </section>
+
+        <section class="portfolio-grid">
+          <div class="panel-section" id="portfolio">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Portfolio</span>
+                <h2>Portfolio tracker</h2>
+              </div>
+            </div>
+
+            <form id="portfolioForm" class="portfolio-form">
+              <input id="portfolioSymbol" type="text" placeholder="BTC" maxlength="12" aria-label="Coin symbol" />
+              <input id="portfolioAmount" type="number" min="0" step="0.0001" placeholder="Amount" aria-label="Amount owned" />
+              <input id="portfolioCost" type="number" min="0" step="0.01" placeholder="Avg cost" aria-label="Average cost per coin" />
+              <button class="primary-btn small" type="submit">Add</button>
+            </form>
+
+            <div id="portfolioList" class="portfolio-list"></div>
           </div>
 
           <aside class="panel-section community-panel" id="community">
@@ -194,7 +224,6 @@
               <h2>Latest stories</h2>
             </div>
           </div>
-
           <div class="news-grid" id="newsGrid"></div>
         </section>
       </main>
@@ -203,6 +232,119 @@
     <script src="./app.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

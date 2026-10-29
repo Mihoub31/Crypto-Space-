@@ -1,7 +1,18 @@
-node_modules
-npm-debug.log*
-.env
-.DS_Store
+{
+  "name": "ledgerline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ledgerline crypto dashboard with market data, portfolio tracking, and community room.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
 
 
 
@@ -160,3 +171,33 @@ npm-debug.log*
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
