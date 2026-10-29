@@ -3,17 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ledgerline is a crypto news and market dashboard that tracks top gainers, portfolio sentiment, and community discussions."
-    />
+    <meta name="description" content="Ledgerline is a crypto news and market dashboard with live market movers, charts, and community discussion." />
     <title>Ledgerline | Crypto News & Market Pulse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -34,17 +28,20 @@
           <a href="#community">Community</a>
         </nav>
 
-        <button class="primary-btn" type="button">Join room</button>
+        <div class="header-actions">
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+          <button class="primary-btn" type="button">Join room</button>
+        </div>
       </header>
 
       <main>
         <section class="hero" id="overview">
           <div class="hero-copy">
             <span class="eyebrow">Live market intelligence</span>
-            <h1>Crypto news, market movement, and expert room chat.</h1>
+            <h1>Crypto news, market movement, and community insight.</h1>
             <p>
-              Track the strongest gainers of the day, read the latest crypto stories,
-              and discuss trends with the community in one focused dashboard.
+              Follow top gainers, understand the market pulse, and join real-time conversations about price action,
+              narratives, and crypto opportunities in one place.
             </p>
 
             <div class="hero-actions">
@@ -117,6 +114,32 @@
               <small id="gainerUpdated">Loading market data...</small>
             </div>
 
+            <div class="table-controls">
+              <label class="field-group">
+                <span>Filter</span>
+                <input id="marketSearch" type="search" placeholder="Search coin" aria-label="Filter market table" />
+              </label>
+
+              <label class="field-group">
+                <span>Trend</span>
+                <select id="trendFilter">
+                  <option value="all">All</option>
+                  <option value="up">Up only</option>
+                  <option value="down">Down only</option>
+                </select>
+              </label>
+
+              <label class="field-group">
+                <span>Sort by</span>
+                <select id="sortSelect">
+                  <option value="change24h">24h change</option>
+                  <option value="volume24h">Volume</option>
+                  <option value="price">Price</option>
+                  <option value="symbol">Symbol</option>
+                </select>
+              </label>
+            </div>
+
             <div class="table-wrap">
               <table>
                 <thead>
@@ -154,6 +177,16 @@
           </aside>
         </section>
 
+        <section class="chart-section panel-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Signals</span>
+              <h2>Price momentum</h2>
+            </div>
+          </div>
+          <div class="chart-grid" id="chartGrid"></div>
+        </section>
+
         <section class="panel-section news-section" id="news">
           <div class="section-heading">
             <div>
@@ -170,6 +203,241 @@
     <script src="./app.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
