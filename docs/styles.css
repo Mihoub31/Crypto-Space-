@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ledgerline is a crypto news and market dashboard that tracks top gainers, portfolio sentiment, and community discussions."
+    />
+    <title>Ledgerline | Crypto News & Market Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">L</div>
+          <div>
+            <div class="brand-name">Ledgerline</div>
+            <div class="brand-tag">Crypto news and market pulse</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#gainers">Top movers</a>
+          <a href="#news">News</a>
+          <a href="#community">Community</a>
+        </nav>
+
+        <button class="primary-btn" type="button">Join room</button>
+      </header>
+
+      <main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <span class="eyebrow">Live market intelligence</span>
+            <h1>Crypto news, market movement, and expert room chat.</h1>
+            <p>
+              Track the strongest gainers of the day, read the latest crypto stories,
+              and discuss trends with the community in one focused dashboard.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#gainers">Explore movers</a>
+              <a class="secondary-btn" href="#news">Latest stories</a>
+            </div>
+          </div>
+
+          <div class="market-panel" aria-live="polite">
+            <div class="panel-heading">
+              <span>Market snapshot</span>
+              <span class="status-pill">Live</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric-card accent">
+                <label>BTC</label>
+                <strong id="btcPrice">$64,280</strong>
+                <span class="trend up">+1.8%</span>
+              </div>
+              <div class="metric-card">
+                <label>ETH</label>
+                <strong id="ethPrice">$3,420</strong>
+                <span class="trend up">+2.3%</span>
+              </div>
+              <div class="metric-card">
+                <label>Global cap</label>
+                <strong id="marketCap">$2.6T</strong>
+                <span class="trend up">+0.9%</span>
+              </div>
+              <div class="metric-card">
+                <label>24h volume</label>
+                <strong id="volume">$89.4B</strong>
+                <span class="trend up">+6.1%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-strip" aria-label="Market stats">
+          <article>
+            <span class="label">Top gainer</span>
+            <strong id="topGainer">HUMA</strong>
+            <small id="topGainerMove">+11.6%</small>
+          </article>
+          <article>
+            <span class="label">Strongest sector</span>
+            <strong>AI & infra</strong>
+            <small>Momentum building</small>
+          </article>
+          <article>
+            <span class="label">Risk signal</span>
+            <strong>Moderate</strong>
+            <small>Volatility elevated</small>
+          </article>
+          <article>
+            <span class="label">Updated</span>
+            <strong id="updatedTime">Now</strong>
+            <small>UTC</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel-section" id="gainers">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Market overview</span>
+                <h2>Top crypto gainers</h2>
+              </div>
+              <small id="gainerUpdated">Loading market data...</small>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>24h</th>
+                    <th>Volume</th>
+                    <th>Market cap</th>
+                  </tr>
+                </thead>
+                <tbody id="gainersTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="panel-section community-panel" id="community">
+            <div class="section-heading compact">
+              <div>
+                <span class="eyebrow">Community</span>
+                <h2>Customer room</h2>
+              </div>
+            </div>
+
+            <div class="channel-tabs" id="channelTabs" aria-label="Room channels"></div>
+            <div class="chat-log" id="chatLog" aria-live="polite"></div>
+
+            <div class="composer">
+              <input id="nameInput" type="text" maxlength="20" placeholder="Your name" aria-label="Your name" />
+              <div class="compose-row">
+                <input id="messageInput" type="text" maxlength="300" placeholder="Write a message" aria-label="Your message" />
+                <button class="primary-btn small" id="sendBtn" type="button">Send</button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="panel-section news-section" id="news">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Insights</span>
+              <h2>Latest stories</h2>
+            </div>
+          </div>
+
+          <div class="news-grid" id="newsGrid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
