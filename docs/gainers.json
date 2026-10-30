@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-29T12:42:27.711104+00:00",
+  "updated": "2026-10-30T12:34:11.198070+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "HUMA",
-        "price": 0.0299,
-        "change24h": 11.567,
-        "volume24h": 2766062.23146,
+        "symbol": "BEAMX",
+        "price": 0.004697,
+        "change24h": 39.17,
+        "volume24h": 15322788.366911,
         "marketCap": null
       },
       {
-        "symbol": "HYPE",
-        "price": 89.0,
-        "change24h": 10.353,
-        "volume24h": 54268016.44291,
+        "symbol": "PARTI",
+        "price": 0.0518,
+        "change24h": 32.821,
+        "volume24h": 45675180.23515,
         "marketCap": null
       },
       {
-        "symbol": "LITEB",
-        "price": 964.18,
-        "change24h": 9.976,
-        "volume24h": 4971905.37349,
+        "symbol": "LSK",
+        "price": 0.2076,
+        "change24h": 21.262,
+        "volume24h": 18266004.30188,
         "marketCap": null
       },
       {
-        "symbol": "KAT",
-        "price": 0.00458,
-        "change24h": 7.26,
-        "volume24h": 5435321.0863,
-        "marketCap": null
-      },
-      {
-        "symbol": "HFT",
-        "price": 0.00711,
-        "change24h": 6.278,
-        "volume24h": 2328073.1448576,
-        "marketCap": null
-      },
-      {
-        "symbol": "BICO",
-        "price": 0.0164,
-        "change24h": 5.061,
-        "volume24h": 2468288.6937676,
-        "marketCap": null
-      },
-      {
-        "symbol": "SKHYB",
-        "price": 161.25,
-        "change24h": 3.491,
-        "volume24h": 22327731.78706,
+        "symbol": "SOPH",
+        "price": 0.00176,
+        "change24h": 19.728,
+        "volume24h": 3775004.91031,
         "marketCap": null
       },
       {
         "symbol": "SOXSB",
-        "price": 42.84,
-        "change24h": 3.353,
-        "volume24h": 6463759.4718,
+        "price": 50.22,
+        "change24h": 17.391,
+        "volume24h": 4054669.607,
         "marketCap": null
       },
       {
-        "symbol": "ZRO",
-        "price": 1.76,
-        "change24h": 3.105,
-        "volume24h": 8146421.8423,
+        "symbol": "TLM",
+        "price": 0.0014,
+        "change24h": 16.861,
+        "volume24h": 3783744.734933,
         "marketCap": null
       },
       {
-        "symbol": "ARB",
-        "price": 0.1704,
-        "change24h": 2.961,
-        "volume24h": 13501087.52543,
+        "symbol": "ALPINE",
+        "price": 0.344,
+        "change24h": 14.667,
+        "volume24h": 4475206.13342,
+        "marketCap": null
+      },
+      {
+        "symbol": "PUNDIX",
+        "price": 0.1119,
+        "change24h": 10.246,
+        "volume24h": 2165730.33441,
+        "marketCap": null
+      },
+      {
+        "symbol": "NIL",
+        "price": 0.07822,
+        "change24h": 7.786,
+        "volume24h": 6203998.087121,
+        "marketCap": null
+      },
+      {
+        "symbol": "PEPE",
+        "price": 5.28e-06,
+        "change24h": 7.755,
+        "volume24h": 293421231.21058744,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "YOM",
-        "price": 0.01319,
-        "change24h": 32.16,
-        "volume24h": 2400683.701162,
+        "symbol": "BLESS",
+        "price": 0.01344,
+        "change24h": 40.29,
+        "volume24h": 2083664.892556,
         "marketCap": null
       },
       {
-        "symbol": "HYPE",
-        "price": 88.959,
-        "change24h": 10.25,
-        "volume24h": 4768725.87,
+        "symbol": "Q",
+        "price": 0.048124,
+        "change24h": 17.96,
+        "volume24h": 6345135.796874,
         "marketCap": null
       },
       {
-        "symbol": "NAORIS",
-        "price": 0.03287,
-        "change24h": 5.99,
-        "volume24h": 4348711.374144,
+        "symbol": "JCT",
+        "price": 0.005953,
+        "change24h": 9.53,
+        "volume24h": 4190418.223698,
         "marketCap": null
       },
       {
-        "symbol": "VAYLA",
-        "price": 0.1062,
-        "change24h": 5.26,
-        "volume24h": 2288485.726182,
+        "symbol": "PEPE",
+        "price": 5.191e-06,
+        "change24h": 6.04,
+        "volume24h": 71681411.95472357,
         "marketCap": null
       },
       {
         "symbol": "RITUAL",
-        "price": 0.02079,
-        "change24h": 3.27,
-        "volume24h": 3356877.414102,
+        "price": 0.02199,
+        "change24h": 5.3100000000000005,
+        "volume24h": 3170139.669408,
         "marketCap": null
       },
       {
-        "symbol": "ARB",
-        "price": 0.1705,
-        "change24h": 2.9499999999999997,
-        "volume24h": 11196946.84578184,
+        "symbol": "HYPE",
+        "price": 92.175,
+        "change24h": 4.66,
+        "volume24h": 18533002.8505,
         "marketCap": null
       },
       {
-        "symbol": "UNI",
-        "price": 7.2254,
-        "change24h": 2.6599999999999997,
-        "volume24h": 23767620.02130976,
+        "symbol": "TRX",
+        "price": 0.3409,
+        "change24h": 2.83,
+        "volume24h": 51318499.184396,
         "marketCap": null
       },
       {
-        "symbol": "NIULAI",
-        "price": 0.06037,
-        "change24h": 2.65,
-        "volume24h": 2585667.54932,
+        "symbol": "BCH",
+        "price": 282.98,
+        "change24h": 1.43,
+        "volume24h": 3773629.342276,
         "marketCap": null
       },
       {
-        "symbol": "ENA",
-        "price": 0.2053,
-        "change24h": 2.34,
-        "volume24h": 16986067.774688,
+        "symbol": "DNA",
+        "price": 0.17375,
+        "change24h": 1.37,
+        "volume24h": 3035264.697306,
         "marketCap": null
       },
       {
-        "symbol": "LTC",
-        "price": 58.28,
-        "change24h": 1.5599999999999998,
-        "volume24h": 17456602.69673668,
+        "symbol": "VAYLA",
+        "price": 0.1073,
+        "change24h": 1.25,
+        "volume24h": 3497587.11541,
         "marketCap": null
       }
     ]
