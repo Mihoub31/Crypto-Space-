@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-30T12:34:11.198070+00:00",
+  "updated": "2026-10-31T11:59:38.328690+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "BEAMX",
-        "price": 0.004697,
-        "change24h": 39.17,
-        "volume24h": 15322788.366911,
-        "marketCap": null
-      },
-      {
-        "symbol": "PARTI",
-        "price": 0.0518,
-        "change24h": 32.821,
-        "volume24h": 45675180.23515,
-        "marketCap": null
-      },
-      {
         "symbol": "LSK",
-        "price": 0.2076,
-        "change24h": 21.262,
-        "volume24h": 18266004.30188,
+        "price": 0.2699,
+        "change24h": 34.078,
+        "volume24h": 12969362.78979,
         "marketCap": null
       },
       {
-        "symbol": "SOPH",
-        "price": 0.00176,
-        "change24h": 19.728,
-        "volume24h": 3775004.91031,
+        "symbol": "RAD",
+        "price": 0.266,
+        "change24h": 19.283,
+        "volume24h": 3327223.8249,
         "marketCap": null
       },
       {
-        "symbol": "SOXSB",
-        "price": 50.22,
-        "change24h": 17.391,
-        "volume24h": 4054669.607,
+        "symbol": "AMP",
+        "price": 0.00072,
+        "change24h": 12.324,
+        "volume24h": 2064389.174691,
         "marketCap": null
       },
       {
-        "symbol": "TLM",
-        "price": 0.0014,
-        "change24h": 16.861,
-        "volume24h": 3783744.734933,
+        "symbol": "GTC",
+        "price": 0.23224,
+        "change24h": 11.971,
+        "volume24h": 3552257.271028,
         "marketCap": null
       },
       {
-        "symbol": "ALPINE",
-        "price": 0.344,
-        "change24h": 14.667,
-        "volume24h": 4475206.13342,
+        "symbol": "PENDLE",
+        "price": 1.889,
+        "change24h": 11.183,
+        "volume24h": 5521744.1732,
         "marketCap": null
       },
       {
-        "symbol": "PUNDIX",
-        "price": 0.1119,
-        "change24h": 10.246,
-        "volume24h": 2165730.33441,
+        "symbol": "XPL",
+        "price": 0.0806,
+        "change24h": 6.996,
+        "volume24h": 14157610.718773,
         "marketCap": null
       },
       {
-        "symbol": "NIL",
-        "price": 0.07822,
-        "change24h": 7.786,
-        "volume24h": 6203998.087121,
+        "symbol": "OP",
+        "price": 0.1125,
+        "change24h": 6.939,
+        "volume24h": 9521173.436563,
         "marketCap": null
       },
       {
-        "symbol": "PEPE",
-        "price": 5.28e-06,
-        "change24h": 7.755,
-        "volume24h": 293421231.21058744,
+        "symbol": "EIGEN",
+        "price": 0.1865,
+        "change24h": 6.938,
+        "volume24h": 2689265.770258,
+        "marketCap": null
+      },
+      {
+        "symbol": "AAVE",
+        "price": 133.88,
+        "change24h": 6.525,
+        "volume24h": 17878205.09336,
+        "marketCap": null
+      },
+      {
+        "symbol": "RSR",
+        "price": 0.001452,
+        "change24h": 6.452,
+        "volume24h": 4583013.6281886,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "BLESS",
-        "price": 0.01344,
-        "change24h": 40.29,
-        "volume24h": 2083664.892556,
+        "symbol": "LSK",
+        "price": 0.27,
+        "change24h": 34.660000000000004,
+        "volume24h": 2063912.48657638,
         "marketCap": null
       },
       {
-        "symbol": "Q",
-        "price": 0.048124,
-        "change24h": 17.96,
-        "volume24h": 6345135.796874,
+        "symbol": "AIN",
+        "price": 0.22302,
+        "change24h": 32.43,
+        "volume24h": 4771410.975782,
         "marketCap": null
       },
       {
-        "symbol": "JCT",
-        "price": 0.005953,
-        "change24h": 9.53,
-        "volume24h": 4190418.223698,
+        "symbol": "AAVE",
+        "price": 133.624,
+        "change24h": 6.54,
+        "volume24h": 12160620.9109338,
         "marketCap": null
       },
       {
-        "symbol": "PEPE",
-        "price": 5.191e-06,
-        "change24h": 6.04,
-        "volume24h": 71681411.95472357,
+        "symbol": "PIEVERSE",
+        "price": 1.038,
+        "change24h": 4.52,
+        "volume24h": 14804726.166292,
         "marketCap": null
       },
       {
-        "symbol": "RITUAL",
-        "price": 0.02199,
-        "change24h": 5.3100000000000005,
-        "volume24h": 3170139.669408,
+        "symbol": "LINK",
+        "price": 11.4963,
+        "change24h": 3.8699999999999997,
+        "volume24h": 15377133.6548592,
         "marketCap": null
       },
       {
-        "symbol": "HYPE",
-        "price": 92.175,
-        "change24h": 4.66,
-        "volume24h": 18533002.8505,
+        "symbol": "ENA",
+        "price": 0.1914,
+        "change24h": 3.4000000000000004,
+        "volume24h": 15105660.613246,
         "marketCap": null
       },
       {
-        "symbol": "TRX",
-        "price": 0.3409,
-        "change24h": 2.83,
-        "volume24h": 51318499.184396,
+        "symbol": "ZEC",
+        "price": 1281.72,
+        "change24h": 3.3000000000000003,
+        "volume24h": 52433873.717427015,
         "marketCap": null
       },
       {
-        "symbol": "BCH",
-        "price": 282.98,
-        "change24h": 1.43,
-        "volume24h": 3773629.342276,
-        "marketCap": null
-      },
-      {
-        "symbol": "DNA",
-        "price": 0.17375,
-        "change24h": 1.37,
-        "volume24h": 3035264.697306,
+        "symbol": "XLM",
+        "price": 0.169,
+        "change24h": 2.0500000000000003,
+        "volume24h": 3824253.622578,
         "marketCap": null
       },
       {
         "symbol": "VAYLA",
-        "price": 0.1073,
-        "change24h": 1.25,
-        "volume24h": 3497587.11541,
+        "price": 0.10857,
+        "change24h": 1.53,
+        "volume24h": 3716591.319648,
+        "marketCap": null
+      },
+      {
+        "symbol": "GRAM",
+        "price": 1.181,
+        "change24h": 1.37,
+        "volume24h": 2970262.66934,
         "marketCap": null
       }
     ]
