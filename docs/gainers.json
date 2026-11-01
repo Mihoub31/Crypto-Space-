@@ -1,147 +1,147 @@
 {
-  "updated": "2026-10-31T11:59:38.328690+00:00",
+  "updated": "2026-11-01T13:00:15.940036+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "LSK",
-        "price": 0.2699,
-        "change24h": 34.078,
-        "volume24h": 12969362.78979,
+        "symbol": "\u725b\u6765",
+        "price": 0.0686,
+        "change24h": 26.01,
+        "volume24h": 10276530.45945,
         "marketCap": null
       },
       {
-        "symbol": "RAD",
-        "price": 0.266,
-        "change24h": 19.283,
-        "volume24h": 3327223.8249,
+        "symbol": "G",
+        "price": 0.00389,
+        "change24h": 18.237,
+        "volume24h": 6625386.49233,
         "marketCap": null
       },
       {
-        "symbol": "AMP",
-        "price": 0.00072,
-        "change24h": 12.324,
-        "volume24h": 2064389.174691,
+        "symbol": "INIT",
+        "price": 0.20038,
+        "change24h": 13.209,
+        "volume24h": 3633095.596072,
         "marketCap": null
       },
       {
-        "symbol": "GTC",
-        "price": 0.23224,
-        "change24h": 11.971,
-        "volume24h": 3552257.271028,
+        "symbol": "POWR",
+        "price": 0.0649,
+        "change24h": 10.751,
+        "volume24h": 2744663.0279,
         "marketCap": null
       },
       {
-        "symbol": "PENDLE",
-        "price": 1.889,
-        "change24h": 11.183,
-        "volume24h": 5521744.1732,
+        "symbol": "KITE",
+        "price": 0.1211,
+        "change24h": 10.392,
+        "volume24h": 2158904.17329,
         "marketCap": null
       },
       {
-        "symbol": "XPL",
-        "price": 0.0806,
-        "change24h": 6.996,
-        "volume24h": 14157610.718773,
+        "symbol": "MARSCOIN",
+        "price": 0.0571,
+        "change24h": 9.178,
+        "volume24h": 8716438.61025,
         "marketCap": null
       },
       {
-        "symbol": "OP",
-        "price": 0.1125,
-        "change24h": 6.939,
-        "volume24h": 9521173.436563,
+        "symbol": "REZ",
+        "price": 0.004183,
+        "change24h": 8.565,
+        "volume24h": 3339125.9493915,
         "marketCap": null
       },
       {
-        "symbol": "EIGEN",
-        "price": 0.1865,
-        "change24h": 6.938,
-        "volume24h": 2689265.770258,
+        "symbol": "ZRO",
+        "price": 1.878,
+        "change24h": 8.367,
+        "volume24h": 6343921.15819,
         "marketCap": null
       },
       {
-        "symbol": "AAVE",
-        "price": 133.88,
-        "change24h": 6.525,
-        "volume24h": 17878205.09336,
+        "symbol": "COTI",
+        "price": 0.0105,
+        "change24h": 8.247,
+        "volume24h": 2014819.59749,
         "marketCap": null
       },
       {
         "symbol": "RSR",
-        "price": 0.001452,
-        "change24h": 6.452,
-        "volume24h": 4583013.6281886,
+        "price": 0.001542,
+        "change24h": 7.456,
+        "volume24h": 4254592.3388841,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "LSK",
-        "price": 0.27,
-        "change24h": 34.660000000000004,
-        "volume24h": 2063912.48657638,
-        "marketCap": null
-      },
-      {
-        "symbol": "AIN",
-        "price": 0.22302,
-        "change24h": 32.43,
-        "volume24h": 4771410.975782,
-        "marketCap": null
-      },
-      {
-        "symbol": "AAVE",
-        "price": 133.624,
-        "change24h": 6.54,
-        "volume24h": 12160620.9109338,
+        "symbol": "ZRO",
+        "price": 1.8738,
+        "change24h": 8.3,
+        "volume24h": 5351102.756036,
         "marketCap": null
       },
       {
         "symbol": "PIEVERSE",
-        "price": 1.038,
-        "change24h": 4.52,
-        "volume24h": 14804726.166292,
+        "price": 1.071,
+        "change24h": 4.12,
+        "volume24h": 14340298.462854,
         "marketCap": null
       },
       {
-        "symbol": "LINK",
-        "price": 11.4963,
-        "change24h": 3.8699999999999997,
-        "volume24h": 15377133.6548592,
-        "marketCap": null
-      },
-      {
-        "symbol": "ENA",
-        "price": 0.1914,
-        "change24h": 3.4000000000000004,
-        "volume24h": 15105660.613246,
-        "marketCap": null
-      },
-      {
-        "symbol": "ZEC",
-        "price": 1281.72,
-        "change24h": 3.3000000000000003,
-        "volume24h": 52433873.717427015,
-        "marketCap": null
-      },
-      {
-        "symbol": "XLM",
-        "price": 0.169,
-        "change24h": 2.0500000000000003,
-        "volume24h": 3824253.622578,
-        "marketCap": null
-      },
-      {
-        "symbol": "VAYLA",
-        "price": 0.10857,
-        "change24h": 1.53,
-        "volume24h": 3716591.319648,
+        "symbol": "UNI",
+        "price": 7.2457,
+        "change24h": 3.8,
+        "volume24h": 16281263.82510392,
         "marketCap": null
       },
       {
         "symbol": "GRAM",
-        "price": 1.181,
-        "change24h": 1.37,
-        "volume24h": 2970262.66934,
+        "price": 1.232,
+        "change24h": 3.61,
+        "volume24h": 2095147.04034,
+        "marketCap": null
+      },
+      {
+        "symbol": "AVAX",
+        "price": 8.751,
+        "change24h": 3.0700000000000003,
+        "volume24h": 11333896.1225464,
+        "marketCap": null
+      },
+      {
+        "symbol": "AAVE",
+        "price": 137.671,
+        "change24h": 2.44,
+        "volume24h": 11531007.03482221,
+        "marketCap": null
+      },
+      {
+        "symbol": "WIF",
+        "price": 0.179,
+        "change24h": 1.58,
+        "volume24h": 4305893.338888,
+        "marketCap": null
+      },
+      {
+        "symbol": "XMR",
+        "price": 602.49,
+        "change24h": 1.41,
+        "volume24h": 38431111.27712,
+        "marketCap": null
+      },
+      {
+        "symbol": "LTC",
+        "price": 55.78,
+        "change24h": 1.38,
+        "volume24h": 6028050.4924,
+        "marketCap": null
+      },
+      {
+        "symbol": "BNB",
+        "price": 713.089,
+        "change24h": 1.04,
+        "volume24h": 18601372.9801298,
         "marketCap": null
       }
     ]
