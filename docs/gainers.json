@@ -1,47 +1,33 @@
 {
-  "updated": "2026-11-02T15:21:53.241330+00:00",
+  "updated": "2026-11-03T13:56:22.288054+00:00",
   "sources": {
     "Binance": [
       {
+        "symbol": "BMT",
+        "price": 0.02752,
+        "change24h": 31.048,
+        "volume24h": 10940551.447326,
+        "marketCap": null
+      },
+      {
         "symbol": "HOT",
-        "price": 0.000423,
-        "change24h": 17.827,
-        "volume24h": 4478344.867893,
+        "price": 0.000527,
+        "change24h": 30.446,
+        "volume24h": 12292398.462971,
         "marketCap": null
       },
       {
-        "symbol": "MITO",
-        "price": 0.00874,
-        "change24h": 16.689,
-        "volume24h": 3754148.735791,
+        "symbol": "RUNE",
+        "price": 0.581,
+        "change24h": 9.211,
+        "volume24h": 4088121.6169,
         "marketCap": null
       },
       {
-        "symbol": "HAEDAL",
-        "price": 0.02716,
-        "change24h": 11.038,
-        "volume24h": 3708240.576516,
-        "marketCap": null
-      },
-      {
-        "symbol": "KORUB",
-        "price": 11.75,
-        "change24h": 9.608,
-        "volume24h": 3772707.3594,
-        "marketCap": null
-      },
-      {
-        "symbol": "1000CAT",
-        "price": 0.001737,
-        "change24h": 7.156,
-        "volume24h": 5799317.944134,
-        "marketCap": null
-      },
-      {
-        "symbol": "BEAMX",
-        "price": 0.004976,
-        "change24h": 6.598,
-        "volume24h": 11233682.184059,
+        "symbol": "STRK",
+        "price": 0.04465,
+        "change24h": 7.1,
+        "volume24h": 4679922.6208106,
         "marketCap": null
       },
       {
@@ -52,96 +38,110 @@
         "marketCap": null
       },
       {
-        "symbol": "OGN",
-        "price": 0.02653,
-        "change24h": 5.824,
-        "volume24h": 3737023.50072,
+        "symbol": "ACT",
+        "price": 0.00857,
+        "change24h": 5.542,
+        "volume24h": 2225789.571755,
         "marketCap": null
       },
       {
-        "symbol": "SOPH",
-        "price": 0.0015,
-        "change24h": 5.634,
-        "volume24h": 5143976.93302,
+        "symbol": "ZRO",
+        "price": 1.853,
+        "change24h": 5.105,
+        "volume24h": 7271311.07066,
         "marketCap": null
       },
       {
-        "symbol": "\u725b\u6765",
-        "price": 0.06951,
-        "change24h": 4.229,
-        "volume24h": 8882811.0879,
+        "symbol": "SOXSB",
+        "price": 51.73,
+        "change24h": 4.653,
+        "volume24h": 2118997.7949,
+        "marketCap": null
+      },
+      {
+        "symbol": "STX",
+        "price": 0.3264,
+        "change24h": 2.771,
+        "volume24h": 2058473.88354,
+        "marketCap": null
+      },
+      {
+        "symbol": "XRP",
+        "price": 1.2854,
+        "change24h": 2.292,
+        "volume24h": 109151832.1365,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "LYN",
-        "price": 0.020229,
-        "change24h": 35.36,
-        "volume24h": 3414487.8276882,
+        "symbol": "AGT",
+        "price": 0.055608,
+        "change24h": 72.84,
+        "volume24h": 2709303.70416,
+        "marketCap": null
+      },
+      {
+        "symbol": "AXIS",
+        "price": 0.1376,
+        "change24h": 11.68,
+        "volume24h": 8762947.024422,
+        "marketCap": null
+      },
+      {
+        "symbol": "PIEVERSE",
+        "price": 1.1649,
+        "change24h": 9.53,
+        "volume24h": 15790585.50735,
+        "marketCap": null
+      },
+      {
+        "symbol": "JCT",
+        "price": 0.00445,
+        "change24h": 8.16,
+        "volume24h": 6409497.376558,
         "marketCap": null
       },
       {
         "symbol": "EVAA",
-        "price": 1.3025,
-        "change24h": 10.26,
-        "volume24h": 6797696.069258,
-        "marketCap": null
-      },
-      {
-        "symbol": "NIULAI",
-        "price": 0.06942,
-        "change24h": 4.31,
-        "volume24h": 2059641.886684,
-        "marketCap": null
-      },
-      {
-        "symbol": "TA",
-        "price": 0.06239,
-        "change24h": 4.0,
-        "volume24h": 2399027.633792,
-        "marketCap": null
-      },
-      {
-        "symbol": "TRX",
-        "price": 0.3192,
-        "change24h": 2.2399999999999998,
-        "volume24h": 7988519.601312,
-        "marketCap": null
-      },
-      {
-        "symbol": "XAUT",
-        "price": 3949.15,
-        "change24h": 1.8900000000000001,
-        "volume24h": 2438543.936204,
-        "marketCap": null
-      },
-      {
-        "symbol": "ZEC",
-        "price": 1263.236,
-        "change24h": 1.7500000000000002,
-        "volume24h": 31456620.57203848,
-        "marketCap": null
-      },
-      {
-        "symbol": "ETH",
-        "price": 2292.11,
-        "change24h": 0.9199999999999999,
-        "volume24h": 80385362.89171895,
-        "marketCap": null
-      },
-      {
-        "symbol": "BDX",
-        "price": 0.07194,
-        "change24h": 0.5,
-        "volume24h": 3017762.911824262,
+        "price": 1.4873,
+        "change24h": 6.78,
+        "volume24h": 7191771.680404,
         "marketCap": null
       },
       {
         "symbol": "XMR",
-        "price": 604.26,
-        "change24h": 0.22999999999999998,
-        "volume24h": 59825093.12934,
+        "price": 625.51,
+        "change24h": 3.45,
+        "volume24h": 67289637.86718,
+        "marketCap": null
+      },
+      {
+        "symbol": "AMZNX",
+        "price": 249.03,
+        "change24h": 2.6599999999999997,
+        "volume24h": 3116847.99458,
+        "marketCap": null
+      },
+      {
+        "symbol": "TA",
+        "price": 0.06435,
+        "change24h": 2.3800000000000003,
+        "volume24h": 2291120.465008,
+        "marketCap": null
+      },
+      {
+        "symbol": "XRP",
+        "price": 1.28528,
+        "change24h": 2.26,
+        "volume24h": 45680437.46478129,
+        "marketCap": null
+      },
+      {
+        "symbol": "TRX",
+        "price": 0.3229,
+        "change24h": 1.6,
+        "volume24h": 7221740.959238689,
         "marketCap": null
       }
     ]
