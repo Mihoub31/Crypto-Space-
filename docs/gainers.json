@@ -1,147 +1,147 @@
 {
-  "updated": "2026-11-11T13:55:28.312511+00:00",
+  "updated": "2026-11-12T14:56:58.840068+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "SOXLB",
-        "price": 64.39,
-        "change24h": 24.209,
-        "volume24h": 51597639.70519,
-        "marketCap": null
-      },
-      {
-        "symbol": "CRWVB",
-        "price": 56.01,
-        "change24h": 18.791,
-        "volume24h": 2057354.5946,
-        "marketCap": null
-      },
-      {
-        "symbol": "SNXXB",
-        "price": 4.02,
-        "change24h": 18.584,
-        "volume24h": 5816989.4465,
-        "marketCap": null
-      },
-      {
-        "symbol": "KORUB",
-        "price": 8.34,
-        "change24h": 15.193,
-        "volume24h": 7708903.2601,
-        "marketCap": null
-      },
-      {
-        "symbol": "GRAM",
-        "price": 1.25,
-        "change24h": 14.679,
-        "volume24h": 24972450.70468,
-        "marketCap": null
-      },
-      {
-        "symbol": "INTWB",
-        "price": 6.35,
-        "change24h": 14.621,
-        "volume24h": 2365520.5735,
-        "marketCap": null
-      },
-      {
-        "symbol": "MRVLB",
-        "price": 167.72,
-        "change24h": 14.188,
-        "volume24h": 2178238.63524,
-        "marketCap": null
-      },
-      {
-        "symbol": "OPG",
-        "price": 0.1425,
-        "change24h": 11.241,
-        "volume24h": 2048328.95861,
-        "marketCap": null
-      },
-      {
-        "symbol": "NBISB",
-        "price": 150.15,
-        "change24h": 10.388,
-        "volume24h": 4738363.91773,
+        "symbol": "ERA",
+        "price": 0.0931,
+        "change24h": 11.899,
+        "volume24h": 13831512.1558,
         "marketCap": null
       },
       {
         "symbol": "AMDB",
-        "price": 542.56,
-        "change24h": 9.204,
-        "volume24h": 3749652.27564,
+        "price": 566.64,
+        "change24h": 6.593,
+        "volume24h": 4933429.20489,
+        "marketCap": null
+      },
+      {
+        "symbol": "HFT",
+        "price": 0.00711,
+        "change24h": 6.278,
+        "volume24h": 2328073.1448576,
+        "marketCap": null
+      },
+      {
+        "symbol": "ONE",
+        "price": 0.001662,
+        "change24h": 5.123,
+        "volume24h": 12721059.0542022,
+        "marketCap": null
+      },
+      {
+        "symbol": "NIGHT",
+        "price": 0.04687,
+        "change24h": 3.58,
+        "volume24h": 6736246.13248,
+        "marketCap": null
+      },
+      {
+        "symbol": "GRAM",
+        "price": 1.248,
+        "change24h": 3.568,
+        "volume24h": 24359661.33882,
+        "marketCap": null
+      },
+      {
+        "symbol": "SPCXB",
+        "price": 144.23,
+        "change24h": 2.465,
+        "volume24h": 36407895.22312,
+        "marketCap": null
+      },
+      {
+        "symbol": "AVGOB",
+        "price": 358.86,
+        "change24h": 2.106,
+        "volume24h": 4341319.41865,
+        "marketCap": null
+      },
+      {
+        "symbol": "GOOGLB",
+        "price": 296.63,
+        "change24h": 2.005,
+        "volume24h": 20766113.90955,
+        "marketCap": null
+      },
+      {
+        "symbol": "TSLAB",
+        "price": 394.61,
+        "change24h": 1.586,
+        "volume24h": 3435914.2914,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "AGT",
-        "price": 0.042696,
-        "change24h": 72.92,
-        "volume24h": 3517395.06547,
+        "symbol": "RITUAL",
+        "price": 0.04811,
+        "change24h": 31.69,
+        "volume24h": 5365396.484558,
         "marketCap": null
       },
       {
-        "symbol": "ARIA",
-        "price": 0.27443,
-        "change24h": 36.53,
-        "volume24h": 3149002.030066,
+        "symbol": "AKE",
+        "price": 0.0026077,
+        "change24h": 4.03,
+        "volume24h": 2000510.2556256,
+        "marketCap": null
+      },
+      {
+        "symbol": "AGT",
+        "price": 0.064649,
+        "change24h": 3.4099999999999997,
+        "volume24h": 6489442.828898,
         "marketCap": null
       },
       {
         "symbol": "GRAM",
-        "price": 1.252,
-        "change24h": 14.96,
-        "volume24h": 10918144.80578,
+        "price": 1.248,
+        "change24h": 2.88,
+        "volume24h": 10802988.43312,
+        "marketCap": null
+      },
+      {
+        "symbol": "BDX",
+        "price": 0.07204,
+        "change24h": 2.2800000000000002,
+        "volume24h": 4539236.2566549,
         "marketCap": null
       },
       {
         "symbol": "TA",
-        "price": 0.10732,
-        "change24h": 7.55,
-        "volume24h": 2048672.311316,
+        "price": 0.10945,
+        "change24h": 1.0,
+        "volume24h": 2090185.721364,
         "marketCap": null
       },
       {
-        "symbol": "INTCX",
-        "price": 61.43,
-        "change24h": 6.98,
-        "volume24h": 3008182.6178,
+        "symbol": "SKYAI",
+        "price": 0.03534,
+        "change24h": 0.6799999999999999,
+        "volume24h": 5575702.740192,
         "marketCap": null
       },
       {
-        "symbol": "XMR",
-        "price": 585.78,
-        "change24h": 6.3,
-        "volume24h": 62700412.50018,
+        "symbol": "KII",
+        "price": 0.08445,
+        "change24h": 0.35000000000000003,
+        "volume24h": 2032193.76958,
         "marketCap": null
       },
       {
-        "symbol": "LIT",
-        "price": 3.421,
-        "change24h": 5.09,
-        "volume24h": 2121197.38968,
+        "symbol": "USDC",
+        "price": 1.0008,
+        "change24h": 0.0,
+        "volume24h": 23819665.376296,
         "marketCap": null
       },
       {
-        "symbol": "NEAR",
-        "price": 3.7877,
-        "change24h": 4.9,
-        "volume24h": 27370721.05912218,
-        "marketCap": null
-      },
-      {
-        "symbol": "XLM",
-        "price": 0.1501,
-        "change24h": 4.16,
-        "volume24h": 2753853.005594,
-        "marketCap": null
-      },
-      {
-        "symbol": "PUMP",
-        "price": 0.003641,
-        "change24h": 4.02,
-        "volume24h": 3143409.461874,
+        "symbol": "ICP",
+        "price": 2.535,
+        "change24h": -0.22999999999999998,
+        "volume24h": 3854846.2372526075,
         "marketCap": null
       }
     ]
