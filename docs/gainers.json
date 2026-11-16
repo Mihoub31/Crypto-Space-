@@ -1,147 +1,147 @@
 {
-  "updated": "2026-11-15T13:45:58.122649+00:00",
+  "updated": "2026-11-16T15:25:19.025295+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "INIT",
-        "price": 0.12568,
-        "change24h": 25.617,
-        "volume24h": 17360288.333509,
+        "symbol": "RARE",
+        "price": 0.01579,
+        "change24h": 84.678,
+        "volume24h": 25778806.319029,
         "marketCap": null
       },
       {
-        "symbol": "MEGA",
-        "price": 0.05052,
-        "change24h": 9.564,
-        "volume24h": 7817908.251007,
+        "symbol": "HUMA",
+        "price": 0.00716,
+        "change24h": 8.815,
+        "volume24h": 2310167.31289,
         "marketCap": null
       },
       {
-        "symbol": "KITE",
-        "price": 0.1391,
-        "change24h": 8.081,
-        "volume24h": 2914733.40209,
+        "symbol": "SOXSB",
+        "price": 59.0,
+        "change24h": 7.881,
+        "volume24h": 4477374.6881,
         "marketCap": null
       },
       {
-        "symbol": "BANANAS31",
-        "price": 0.004583,
-        "change24h": 5.235,
-        "volume24h": 2443418.655135,
+        "symbol": "ICP",
+        "price": 2.364,
+        "change24h": 7.26,
+        "volume24h": 6240251.87519,
         "marketCap": null
       },
       {
-        "symbol": "\u5e01\u5b89\u4eba\u751f",
-        "price": 0.4754,
-        "change24h": 4.668,
-        "volume24h": 3285857.86288,
+        "symbol": "SHELL",
+        "price": 0.02675,
+        "change24h": 7.214,
+        "volume24h": 11751251.348133,
         "marketCap": null
       },
       {
-        "symbol": "GPS",
-        "price": 0.00815,
-        "change24h": 2.904,
-        "volume24h": 2180513.252229,
+        "symbol": "REQ",
+        "price": 0.0459,
+        "change24h": 6.744,
+        "volume24h": 2411748.2856,
         "marketCap": null
       },
       {
-        "symbol": "SPCXB",
-        "price": 138.48,
-        "change24h": 2.487,
-        "volume24h": 13524259.67398,
+        "symbol": "AUDIO",
+        "price": 0.01137,
+        "change24h": 5.375,
+        "volume24h": 2118375.341246,
         "marketCap": null
       },
       {
-        "symbol": "SOLV",
-        "price": 0.00445,
-        "change24h": 2.275,
-        "volume24h": 2213413.230973,
+        "symbol": "ASTER",
+        "price": 0.5539,
+        "change24h": 4.293,
+        "volume24h": 60565949.627455,
         "marketCap": null
       },
       {
-        "symbol": "ZEC",
-        "price": 909.67,
-        "change24h": 2.216,
-        "volume24h": 235123769.84995,
+        "symbol": "FF",
+        "price": 0.09993,
+        "change24h": 3.287,
+        "volume24h": 5345155.1149,
         "marketCap": null
       },
       {
-        "symbol": "AAVE",
-        "price": 108.23,
-        "change24h": 1.758,
-        "volume24h": 20556744.68799,
+        "symbol": "MSTRB",
+        "price": 102.07,
+        "change24h": 3.143,
+        "volume24h": 13076463.54465,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
+        "symbol": "VINE",
+        "price": 0.01041,
+        "change24h": 117.78,
+        "volume24h": 2619770.274902,
+        "marketCap": null
+      },
+      {
         "symbol": "EVAA",
-        "price": 2.4234,
-        "change24h": 111.9,
-        "volume24h": 14555563.53269,
+        "price": 3.2076,
+        "change24h": 22.58,
+        "volume24h": 14469733.662172,
         "marketCap": null
       },
       {
-        "symbol": "JCT",
-        "price": 0.002336,
-        "change24h": 24.12,
-        "volume24h": 4737265.585922,
-        "marketCap": null
-      },
-      {
-        "symbol": "VVV",
-        "price": 19.728,
-        "change24h": 9.08,
-        "volume24h": 3380330.29298,
-        "marketCap": null
-      },
-      {
-        "symbol": "STAY",
-        "price": 8.3e-06,
-        "change24h": 7.090000000000001,
-        "volume24h": 2009557.27659618,
+        "symbol": "KOR",
+        "price": 0.0002658,
+        "change24h": 18.759999999999998,
+        "volume24h": 2203039.861114,
         "marketCap": null
       },
       {
         "symbol": "PIEVERSE",
-        "price": 1.8561,
-        "change24h": 5.140000000000001,
-        "volume24h": 10968902.31051,
+        "price": 1.9797,
+        "change24h": 9.83,
+        "volume24h": 15155182.441138,
         "marketCap": null
       },
       {
-        "symbol": "ZEC",
-        "price": 909.665,
-        "change24h": 3.2099999999999995,
-        "volume24h": 51264120.76584653,
+        "symbol": "RITUAL",
+        "price": 0.03454,
+        "change24h": 7.969999999999999,
+        "volume24h": 2726912.885914,
+        "marketCap": null
+      },
+      {
+        "symbol": "JCT",
+        "price": 0.002329,
+        "change24h": 7.32,
+        "volume24h": 6978460.305454,
+        "marketCap": null
+      },
+      {
+        "symbol": "ASTER",
+        "price": 0.5542,
+        "change24h": 4.3999999999999995,
+        "volume24h": 36351559.99185,
+        "marketCap": null
+      },
+      {
+        "symbol": "PAXG",
+        "price": 3853.76,
+        "change24h": 0.9199999999999999,
+        "volume24h": 2217715.188138,
+        "marketCap": null
+      },
+      {
+        "symbol": "XAUT",
+        "price": 3851.44,
+        "change24h": 0.88,
+        "volume24h": 2069626.6470461076,
         "marketCap": null
       },
       {
         "symbol": "AAVE",
-        "price": 108.257,
-        "change24h": 2.09,
-        "volume24h": 14080212.5593728,
-        "marketCap": null
-      },
-      {
-        "symbol": "NIGHT",
-        "price": 0.05009,
-        "change24h": 0.4,
-        "volume24h": 3218822.174438,
-        "marketCap": null
-      },
-      {
-        "symbol": "BNCOLD",
-        "price": 0.009716,
-        "change24h": 0.06,
-        "volume24h": 2981986.895202,
-        "marketCap": null
-      },
-      {
-        "symbol": "AAPLX",
-        "price": 357.51,
-        "change24h": 0.06,
-        "volume24h": 3750204.77212,
+        "price": 107.224,
+        "change24h": 0.62,
+        "volume24h": 10145897.561925,
         "marketCap": null
       }
     ]
