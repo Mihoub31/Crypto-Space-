@@ -1,147 +1,147 @@
 {
-  "updated": "2026-11-23T17:48:53.201979+00:00",
+  "updated": "2026-11-24T17:21:51.398664+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "MUUB",
-        "price": 13.2,
-        "change24h": 26.558,
-        "volume24h": 2318551.6439,
+        "symbol": "ATM",
+        "price": 1.075,
+        "change24h": 48.276,
+        "volume24h": 5291985.86843,
         "marketCap": null
       },
       {
         "symbol": "LISTA",
-        "price": 0.0896,
-        "change24h": 24.618,
-        "volume24h": 6825735.2273,
+        "price": 0.1116,
+        "change24h": 23.588,
+        "volume24h": 11397148.66894,
         "marketCap": null
       },
       {
-        "symbol": "SOXLB",
-        "price": 42.34,
-        "change24h": 24.055,
-        "volume24h": 106158005.26363,
+        "symbol": "SOXSB",
+        "price": 61.09,
+        "change24h": 21.645,
+        "volume24h": 24745368.4466,
         "marketCap": null
       },
       {
-        "symbol": "NVDAB",
-        "price": 163.39,
-        "change24h": 22.776,
-        "volume24h": 234191841.0222,
+        "symbol": "MMT",
+        "price": 0.2306,
+        "change24h": 19.296,
+        "volume24h": 21495458.10107,
         "marketCap": null
       },
       {
-        "symbol": "MUBARAK",
-        "price": 0.02592,
-        "change24h": 21.805,
-        "volume24h": 7540653.136242,
+        "symbol": "SAHARA",
+        "price": 0.00574,
+        "change24h": 11.891,
+        "volume24h": 10705842.86361,
         "marketCap": null
       },
       {
-        "symbol": "SNXXB",
-        "price": 2.24,
-        "change24h": 17.895,
-        "volume24h": 11495618.1158,
+        "symbol": "LUNC",
+        "price": 4.613e-05,
+        "change24h": 8.643,
+        "volume24h": 3626769.75243699,
         "marketCap": null
       },
       {
-        "symbol": "KORUB",
-        "price": 6.15,
-        "change24h": 15.602,
-        "volume24h": 16680158.733,
+        "symbol": "DODO",
+        "price": 0.04345,
+        "change24h": 8.408,
+        "volume24h": 2260468.740218,
         "marketCap": null
       },
       {
-        "symbol": "PROM",
-        "price": 5.263,
-        "change24h": 15.366,
-        "volume24h": 35016780.47745,
+        "symbol": "BABY",
+        "price": 0.00828,
+        "change24h": 5.076,
+        "volume24h": 4242174.75563,
         "marketCap": null
       },
       {
-        "symbol": "MUB",
-        "price": 704.12,
-        "change24h": 13.851,
-        "volume24h": 24486932.30619,
+        "symbol": "AIGENSYN",
+        "price": 0.01688,
+        "change24h": 2.676,
+        "volume24h": 3025189.52654,
         "marketCap": null
       },
       {
-        "symbol": "NBISB",
-        "price": 98.75,
-        "change24h": 13.142,
-        "volume24h": 14060192.50179,
+        "symbol": "KITE",
+        "price": 0.1432,
+        "change24h": 1.922,
+        "volume24h": 2091596.16864,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "EVAA",
-        "price": 3.0065,
-        "change24h": 33.62,
-        "volume24h": 17226526.08466,
+        "symbol": "MMT",
+        "price": 0.2302,
+        "change24h": 19.46,
+        "volume24h": 3856677.467194,
         "marketCap": null
       },
       {
-        "symbol": "NVDAON",
-        "price": 168.8,
-        "change24h": 26.58,
-        "volume24h": 6559612.09192,
+        "symbol": "MTX",
+        "price": 0.5604,
+        "change24h": 7.37,
+        "volume24h": 3951511.975432,
         "marketCap": null
       },
       {
-        "symbol": "ELSA",
-        "price": 0.10296,
-        "change24h": 19.7,
-        "volume24h": 7372559.176222,
+        "symbol": "ON",
+        "price": 0.1174,
+        "change24h": 3.16,
+        "volume24h": 3754823.778626,
         "marketCap": null
       },
       {
         "symbol": "IDOL",
-        "price": 0.01673,
-        "change24h": 14.74,
-        "volume24h": 2895192.10179,
+        "price": 0.01725,
+        "change24h": 2.73,
+        "volume24h": 2139330.527556,
         "marketCap": null
       },
       {
-        "symbol": "MUON",
-        "price": 706.19,
-        "change24h": 14.02,
-        "volume24h": 3097508.71134,
+        "symbol": "AAPLX",
+        "price": 354.2,
+        "change24h": 1.16,
+        "volume24h": 6260336.48978,
         "marketCap": null
       },
       {
-        "symbol": "TSLAON",
-        "price": 387.46,
-        "change24h": 7.6899999999999995,
-        "volume24h": 3170727.0303,
+        "symbol": "AAPLON",
+        "price": 352.82,
+        "change24h": 1.0999999999999999,
+        "volume24h": 3155830.34424,
         "marketCap": null
       },
       {
-        "symbol": "ATOM",
-        "price": 1.26,
-        "change24h": 7.449999999999999,
-        "volume24h": 2299557.0884848,
+        "symbol": "BDX",
+        "price": 0.06816,
+        "change24h": 0.9400000000000001,
+        "volume24h": 2442829.220136668,
         "marketCap": null
       },
       {
-        "symbol": "WIF",
-        "price": 0.1275,
-        "change24h": 6.419999999999999,
-        "volume24h": 5088524.2857287,
+        "symbol": "BLESS",
+        "price": 0.01783,
+        "change24h": 0.38999999999999996,
+        "volume24h": 2245592.74353,
         "marketCap": null
       },
       {
-        "symbol": "INJ",
-        "price": 6.588,
-        "change24h": 5.88,
-        "volume24h": 2312943.7413346977,
+        "symbol": "MSFTON",
+        "price": 500.69,
+        "change24h": 0.24,
+        "volume24h": 3301022.75034,
         "marketCap": null
       },
       {
-        "symbol": "LTC",
-        "price": 41.82,
-        "change24h": 4.279999999999999,
-        "volume24h": 20370831.51706,
+        "symbol": "USDC",
+        "price": 1.0009,
+        "change24h": 0.0,
+        "volume24h": 31957553.242794,
         "marketCap": null
       }
     ]
