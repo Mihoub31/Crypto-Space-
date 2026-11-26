@@ -1,147 +1,147 @@
 {
-  "updated": "2026-11-25T16:59:58.560262+00:00",
+  "updated": "2026-11-26T16:41:41.423593+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "BIGTIME",
-        "price": 0.00709,
-        "change24h": 73.775,
-        "volume24h": 11486502.13055,
-        "marketCap": null
-      },
-      {
-        "symbol": "MANTRA",
-        "price": 0.00255,
-        "change24h": 52.695,
-        "volume24h": 7284004.77862,
-        "marketCap": null
-      },
-      {
-        "symbol": "BLUR",
-        "price": 0.01047,
-        "change24h": 30.224,
-        "volume24h": 4558557.932591,
+        "symbol": "INIT",
+        "price": 0.14696,
+        "change24h": 69.582,
+        "volume24h": 18106650.766476,
         "marketCap": null
       },
       {
         "symbol": "SSV",
-        "price": 1.991,
-        "change24h": 28.951,
-        "volume24h": 3670553.699843,
+        "price": 2.777,
+        "change24h": 40.822,
+        "volume24h": 10251365.506508,
         "marketCap": null
       },
       {
-        "symbol": "MMT",
-        "price": 0.2893,
-        "change24h": 24.43,
-        "volume24h": 17277773.50924,
+        "symbol": "SOXLB",
+        "price": 33.01,
+        "change24h": 31.252,
+        "volume24h": 57800053.47464,
         "marketCap": null
       },
       {
-        "symbol": "OPG",
-        "price": 0.171,
-        "change24h": 21.969,
-        "volume24h": 11029907.46474,
+        "symbol": "SNXXB",
+        "price": 1.51,
+        "change24h": 25.833,
+        "volume24h": 2906778.1625,
         "marketCap": null
       },
       {
-        "symbol": "SOXSB",
-        "price": 74.14,
-        "change24h": 18.246,
-        "volume24h": 25693567.0949,
+        "symbol": "MOVE",
+        "price": 0.005936,
+        "change24h": 21.964,
+        "volume24h": 7647106.9194251,
         "marketCap": null
       },
       {
-        "symbol": "PROM",
-        "price": 5.059,
-        "change24h": 10.797,
-        "volume24h": 5842538.61661,
+        "symbol": "SEI",
+        "price": 0.03805,
+        "change24h": 19.918,
+        "volume24h": 7346361.147476,
         "marketCap": null
       },
       {
-        "symbol": "LISTA",
-        "price": 0.1219,
-        "change24h": 9.327,
-        "volume24h": 7222287.82964,
+        "symbol": "KORUB",
+        "price": 5.24,
+        "change24h": 17.226,
+        "volume24h": 7635256.0331,
         "marketCap": null
       },
       {
-        "symbol": "WAXP",
-        "price": 0.00354,
-        "change24h": 7.927,
-        "volume24h": 2729633.05331,
+        "symbol": "SKY",
+        "price": 0.04604,
+        "change24h": 16.498,
+        "volume24h": 4518334.48675,
+        "marketCap": null
+      },
+      {
+        "symbol": "ZRO",
+        "price": 1.084,
+        "change24h": 14.709,
+        "volume24h": 7184367.93893,
+        "marketCap": null
+      },
+      {
+        "symbol": "MSTRB",
+        "price": 81.43,
+        "change24h": 14.288,
+        "volume24h": 9054891.92443,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "MMT",
-        "price": 0.2901,
-        "change24h": 24.88,
-        "volume24h": 2454519.82601,
+        "symbol": "VERITY",
+        "price": 9.1487,
+        "change24h": 3559.48,
+        "volume24h": 3198090.749738,
         "marketCap": null
       },
       {
         "symbol": "INFI",
-        "price": 0.0419,
-        "change24h": 13.239999999999998,
-        "volume24h": 2145766.920828,
+        "price": 0.0629,
+        "change24h": 46.96,
+        "volume24h": 2909427.80063,
+        "marketCap": null
+      },
+      {
+        "symbol": "ELSA",
+        "price": 0.0973,
+        "change24h": 23.13,
+        "volume24h": 15115412.816352,
         "marketCap": null
       },
       {
         "symbol": "PIEVERSE",
-        "price": 3.3265,
-        "change24h": 11.110000000000001,
-        "volume24h": 14632894.854062,
+        "price": 3.992,
+        "change24h": 20.919999999999998,
+        "volume24h": 15216857.939294,
         "marketCap": null
       },
       {
-        "symbol": "EVAA",
-        "price": 2.6105,
-        "change24h": 6.04,
-        "volume24h": 27905280.750788,
+        "symbol": "SEI",
+        "price": 0.03803,
+        "change24h": 19.74,
+        "volume24h": 11451043.699434,
         "marketCap": null
       },
       {
-        "symbol": "ANTX",
-        "price": 80.74,
-        "change24h": 4.2,
-        "volume24h": 3350899.58436,
+        "symbol": "WIF",
+        "price": 0.1353,
+        "change24h": 15.049999999999999,
+        "volume24h": 6918419.59926084,
         "marketCap": null
       },
       {
-        "symbol": "XMR",
-        "price": 507.02,
-        "change24h": 2.5100000000000002,
-        "volume24h": 58737729.84534,
+        "symbol": "NIULAI",
+        "price": 0.04465,
+        "change24h": 12.950000000000001,
+        "volume24h": 2005957.804258,
         "marketCap": null
       },
       {
-        "symbol": "LTC",
-        "price": 40.94,
-        "change24h": 1.8900000000000001,
-        "volume24h": 17776434.88138,
+        "symbol": "NEAR",
+        "price": 3.0503,
+        "change24h": 11.63,
+        "volume24h": 16501603.475102475,
         "marketCap": null
       },
       {
-        "symbol": "XLM",
-        "price": 0.123,
-        "change24h": 0.08,
-        "volume24h": 26491475.172096,
+        "symbol": "TRUMP",
+        "price": 0.872,
+        "change24h": 8.72,
+        "volume24h": 2746520.651454271,
         "marketCap": null
       },
       {
-        "symbol": "USDC",
-        "price": 1.0013,
-        "change24h": 0.03,
-        "volume24h": 76716373.851824,
-        "marketCap": null
-      },
-      {
-        "symbol": "METAON",
-        "price": 586.97,
-        "change24h": -0.12,
-        "volume24h": 3194951.76646,
+        "symbol": "ENA",
+        "price": 0.1005,
+        "change24h": 8.290000000000001,
+        "volume24h": 6933073.199994,
         "marketCap": null
       }
     ]
