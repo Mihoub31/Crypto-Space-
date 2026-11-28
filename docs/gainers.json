@@ -1,147 +1,147 @@
 {
-  "updated": "2026-11-27T16:26:57.797318+00:00",
+  "updated": "2026-11-28T15:19:37.432101+00:00",
   "sources": {
     "Binance": [
       {
-        "symbol": "PORTAL",
-        "price": 0.02826,
-        "change24h": 126.806,
-        "volume24h": 29926956.315284,
+        "symbol": "ACE",
+        "price": 0.091,
+        "change24h": 25.172,
+        "volume24h": 11245752.84622,
         "marketCap": null
       },
       {
-        "symbol": "HAEDAL",
-        "price": 0.02339,
-        "change24h": 29.369,
-        "volume24h": 19267664.05335,
+        "symbol": "THE",
+        "price": 0.029,
+        "change24h": 12.403,
+        "volume24h": 11047693.42179,
+        "marketCap": null
+      },
+      {
+        "symbol": "SKY",
+        "price": 0.05063,
+        "change24h": 11.373,
+        "volume24h": 6818078.42245,
         "marketCap": null
       },
       {
         "symbol": "SNXXB",
-        "price": 1.84,
-        "change24h": 21.854,
-        "volume24h": 4149328.1263,
+        "price": 1.91,
+        "change24h": 9.77,
+        "volume24h": 3463060.1485,
         "marketCap": null
       },
       {
-        "symbol": "HEI",
-        "price": 0.0886,
-        "change24h": 18.291,
-        "volume24h": 3508218.70252,
+        "symbol": "NIGHT",
+        "price": 0.05297,
+        "change24h": 9.623,
+        "volume24h": 7301610.17834,
         "marketCap": null
       },
       {
-        "symbol": "KORUB",
-        "price": 5.94,
-        "change24h": 13.143,
-        "volume24h": 14672142.4945,
+        "symbol": "SENT",
+        "price": 0.0243,
+        "change24h": 8.385,
+        "volume24h": 6575060.85709,
         "marketCap": null
       },
       {
-        "symbol": "YB",
-        "price": 0.0577,
-        "change24h": 12.476,
-        "volume24h": 3155494.66779,
+        "symbol": "ROBO",
+        "price": 0.00323,
+        "change24h": 8.027,
+        "volume24h": 4544338.22813,
         "marketCap": null
       },
       {
-        "symbol": "CFG",
-        "price": 0.0557,
-        "change24h": 11.847,
-        "volume24h": 7102605.99221,
+        "symbol": "DODO",
+        "price": 0.04199,
+        "change24h": 5.609,
+        "volume24h": 2279495.015513,
+        "marketCap": null
+      },
+      {
+        "symbol": "SOXLB",
+        "price": 36.01,
+        "change24h": 5.539,
+        "volume24h": 26611861.15693,
         "marketCap": null
       },
       {
         "symbol": "SNDKB",
-        "price": 83.33,
-        "change24h": 10.855,
-        "volume24h": 15656390.8458,
-        "marketCap": null
-      },
-      {
-        "symbol": "KAVA",
-        "price": 0.02688,
-        "change24h": 10.435,
-        "volume24h": 3719412.791697,
-        "marketCap": null
-      },
-      {
-        "symbol": "FET",
-        "price": 0.1265,
-        "change24h": 9.146,
-        "volume24h": 13003382.82236,
+        "price": 85.28,
+        "change24h": 5.258,
+        "volume24h": 5070607.045,
         "marketCap": null
       }
     ],
     "KuCoin": [
       {
-        "symbol": "PONS",
-        "price": 0.1042,
-        "change24h": 19.77,
-        "volume24h": 2626314.86758,
+        "symbol": "O",
+        "price": 1.20572,
+        "change24h": 78.8,
+        "volume24h": 3156000.206538,
         "marketCap": null
       },
       {
-        "symbol": "FET",
-        "price": 0.1265,
-        "change24h": 9.139999999999999,
-        "volume24h": 2466853.28856276,
+        "symbol": "EVAA",
+        "price": 2.0945,
+        "change24h": 64.14,
+        "volume24h": 15013479.03371,
+        "marketCap": null
+      },
+      {
+        "symbol": "IDOL",
+        "price": 0.01905,
+        "change24h": 27.16,
+        "volume24h": 2022491.504024,
+        "marketCap": null
+      },
+      {
+        "symbol": "ELSA",
+        "price": 0.10363,
+        "change24h": 19.919999999999998,
+        "volume24h": 3137427.381388,
+        "marketCap": null
+      },
+      {
+        "symbol": "INFI",
+        "price": 0.0553,
+        "change24h": 17.16,
+        "volume24h": 2663811.877014,
+        "marketCap": null
+      },
+      {
+        "symbol": "NIGHT",
+        "price": 0.05301,
+        "change24h": 9.68,
+        "volume24h": 2096888.911172,
+        "marketCap": null
+      },
+      {
+        "symbol": "XMR",
+        "price": 433.18,
+        "change24h": 3.7800000000000002,
+        "volume24h": 48738639.58718,
         "marketCap": null
       },
       {
         "symbol": "ANTX",
-        "price": 90.09,
-        "change24h": 7.22,
-        "volume24h": 3234703.53456,
+        "price": 91.62,
+        "change24h": 2.71,
+        "volume24h": 3216295.57126,
         "marketCap": null
       },
       {
-        "symbol": "HYPE",
-        "price": 64.533,
-        "change24h": 6.77,
-        "volume24h": 3112746.1131052147,
+        "symbol": "AKE",
+        "price": 0.0010834,
+        "change24h": 2.16,
+        "volume24h": 2099940.652672,
         "marketCap": null
       },
       {
-        "symbol": "ZEC",
-        "price": 741.807,
-        "change24h": 5.63,
-        "volume24h": 37624716.19270341,
-        "marketCap": null
-      },
-      {
-        "symbol": "TSLAON",
-        "price": 399.12,
-        "change24h": 4.35,
-        "volume24h": 3270955.52396,
-        "marketCap": null
-      },
-      {
-        "symbol": "GRAM",
-        "price": 0.988,
-        "change24h": 3.45,
-        "volume24h": 4348191.865683534,
-        "marketCap": null
-      },
-      {
-        "symbol": "ENA",
-        "price": 0.1035,
-        "change24h": 2.98,
-        "volume24h": 6862690.200952,
-        "marketCap": null
-      },
-      {
-        "symbol": "AMZNON",
-        "price": 254.61,
-        "change24h": 2.96,
-        "volume24h": 3204833.03152,
-        "marketCap": null
-      },
-      {
-        "symbol": "METAON",
-        "price": 632.09,
-        "change24h": 2.86,
-        "volume24h": 3146255.37998,
+        "symbol": "WIF",
+        "price": 0.1398,
+        "change24h": 1.96,
+        "volume24h": 6763176.31727708,
         "marketCap": null
       }
     ]
